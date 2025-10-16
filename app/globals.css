@@ -76,8 +76,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Updated to use Century Gothic font with fallbacks */
+  --font-sans: "Century Gothic", "CenturyGothic", "AppleGothic", "Futura", "Trebuchet MS", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

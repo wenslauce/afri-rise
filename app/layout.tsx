@@ -1,17 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { Suspense } from "react"
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-  display: "swap",
-})
 
 export const metadata: Metadata = {
   title: "G1 Group of Companies | Securing High-Value Trade Across Borders",
@@ -27,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className="font-sans">
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
             <Navigation />
