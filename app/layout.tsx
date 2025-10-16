@@ -4,6 +4,8 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ErrorBoundary } from "@/components/error-boundary"
+import { CookieBanner } from "@/components/cookie-banner"
+import { BackToTop } from "@/components/back-to-top"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
@@ -26,6 +28,8 @@ export default function RootLayout({
             <Navigation />
             <main>{children}</main>
             <Footer />
+            <CookieBanner />
+            <BackToTop />
           </Suspense>
         </ErrorBoundary>
       </body>
