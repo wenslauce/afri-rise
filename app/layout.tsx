@@ -7,6 +7,7 @@ import { ErrorBoundary } from "@/components/error-boundary"
 import { CookieBanner } from "@/components/cookie-banner"
 import { BackToTop } from "@/components/back-to-top"
 import { Suspense } from "react"
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: "G1 Group of Companies | Securing High-Value Trade Across Borders",
@@ -74,6 +75,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/video/g1loop.mp4" as="video" type="video/mp4" />
+      </head>
       <body className="font-sans">
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
@@ -84,6 +88,7 @@ export default function RootLayout({
             <BackToTop />
           </Suspense>
         </ErrorBoundary>
+        <Analytics />
       </body>
     </html>
   )
