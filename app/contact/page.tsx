@@ -88,7 +88,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Headquarters",
-      details: ["Villa 46, Airport Rd, Entebbe, Uganda", "East Africa Hub"],
+      details: ["Broadway, National Road, Entebbe, Uganda", "East Africa Hub"],
     },
     {
       icon: Phone,
