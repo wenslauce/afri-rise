@@ -137,10 +137,10 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
         }}>
           <h3 style={{ color: '#92400e', marginTop: 0 }}>Need Immediate Assistance?</h3>
           <p style={{ margin: '5px 0', fontSize: '14px', color: '#92400e' }}>
-            <strong>24/7 Emergency Hotline:</strong> +243 861 005 766
+            <strong>24/7 Emergency Hotline:</strong> +256784850601
           </p>
           <p style={{ margin: '5px 0', fontSize: '14px', color: '#92400e' }}>
-            <strong>Business Hours:</strong> +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766 (Mon-Fri: 8:00 AM - 6:00 PM EAT)
+            <strong>Business Hours:</strong> +256784850601 (Mon-Fri: 8:00 AM - 6:00 PM EAT)
           </p>
         </div>
 

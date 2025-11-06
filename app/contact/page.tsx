@@ -93,7 +93,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+32 465 93 22 50 | +254 789 764 967 | +243 861 005 766", "Mon-Fri: 8:00 AM - 6:00 PM EAT"],
+      details: ["+256784850601", "Mon-Fri: 8:00 AM - 6:00 PM EAT"],
     },
     {
       icon: Mail,
@@ -353,7 +353,7 @@ export default function ContactPage() {
               <p className="text-lg mb-4">
                 For urgent matters related to active shipments or time-sensitive transactions:
               </p>
-              <p className="text-xl font-semibold">+32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
+              <p className="text-xl font-semibold">+256784850601</p>
               <p className="text-lg mt-2">24/7 Emergency Support Available</p>
             </CardContent>
           </Card>

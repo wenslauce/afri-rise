@@ -270,7 +270,7 @@ export default function TermsOfServicePage() {
                   <p className="font-semibold text-foreground">Adams Minerals and Consultancy Limited</p>
                   <p>Legal Department</p>
                   <p>Email: info@adamsmineralsconsultancy.com</p>
-                  <p>Phone: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
+                  <p>Phone: +256784850601</p>
                   <p>Address: Broadway, National Road, Entebbe, Uganda</p>
                 </div>
               </div>
