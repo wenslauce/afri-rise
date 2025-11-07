@@ -2,6 +2,39 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
 import { Bitcoin, Shield, Zap, Globe, CheckCircle2, Wallet } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next"
+import { ServiceSchema, FAQSchema } from "@/components/structured-data"
+
+export const metadata: Metadata = {
+  title: "Crypto Desk & Digital Payments | Adams Minerals and Consultancy",
+  description: "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations. Expert crypto asset management and blockchain-based settlements.",
+  keywords: [
+    "cryptocurrency trading",
+    "digital payments",
+    "blockchain settlements",
+    "crypto asset management",
+    "bitcoin trading",
+    "digital currency",
+    "crypto custody",
+    "cross-border crypto payments",
+  ],
+  alternates: {
+    canonical: "https://www.adamsmineralsconsultancy.com/services/crypto-desk",
+  },
+  openGraph: {
+    title: "Crypto Desk & Digital Payments | Adams Minerals and Consultancy",
+    description: "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations.",
+    url: "https://www.adamsmineralsconsultancy.com/services/crypto-desk",
+    images: ["/service-crypto-desk.jpg"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crypto Desk & Digital Payments | Adams Minerals and Consultancy",
+    description: "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations.",
+    images: ["/service-crypto-desk.jpg"],
+  },
+}
 
 export default function CryptoDeskPage() {
   const services = [
@@ -44,8 +77,34 @@ export default function CryptoDeskPage() {
     "Polygon (MATIC)",
   ]
 
+  const faqs = [
+    {
+      question: "What cryptocurrencies do you support?",
+      answer: "We support major cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), Tether (USDT), USD Coin (USDC), Binance Coin (BNB), Cardano (ADA), Solana (SOL), and Polygon (MATIC), with additional currencies available upon request.",
+    },
+    {
+      question: "How secure are cryptocurrency transactions?",
+      answer: "We employ bank-grade security protocols including multi-signature wallets, cold storage solutions, two-factor authentication, and blockchain verification to ensure maximum security for all cryptocurrency transactions.",
+    },
+    {
+      question: "What are the transaction fees?",
+      answer: "Transaction fees vary based on the cryptocurrency, transaction size, and network conditions. We provide transparent fee structures and competitive rates for all digital payment services.",
+    },
+    {
+      question: "How long do crypto transactions take?",
+      answer: "Most cryptocurrency transactions are processed within minutes, with near-instantaneous confirmation. Settlement times vary by blockchain network, typically ranging from a few minutes to an hour.",
+    },
+  ]
+
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        serviceName="Crypto Desk & Digital Payments"
+        serviceType="Cryptocurrency Trading and Digital Payment Services"
+        description="Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations with expert crypto asset management."
+        url="https://www.adamsmineralsconsultancy.com/services/crypto-desk"
+      />
+      <FAQSchema faqs={faqs} />
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 mb-4">

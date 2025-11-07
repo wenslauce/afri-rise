@@ -2,6 +2,40 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
 import { Scale, FileCheck, Shield, AlertTriangle, CheckCircle2, BookOpen } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next"
+import { ServiceSchema, FAQSchema } from "@/components/structured-data"
+
+export const metadata: Metadata = {
+  title: "Regulatory Compliance & Legal Advisory | Adams Minerals and Consultancy",
+  description: "Expert guidance on mining regulations, trade compliance, and comprehensive legal advisory services for mineral sector operations. AML/KYC compliance and international trade law expertise.",
+  keywords: [
+    "mining regulations",
+    "trade compliance",
+    "legal advisory",
+    "regulatory compliance",
+    "mining law",
+    "international trade law",
+    "AML compliance",
+    "KYC compliance",
+    "environmental compliance",
+  ],
+  alternates: {
+    canonical: "https://www.adamsmineralsconsultancy.com/services/compliance",
+  },
+  openGraph: {
+    title: "Regulatory Compliance & Legal Advisory | Adams Minerals and Consultancy",
+    description: "Expert guidance on mining regulations, trade compliance, and legal advisory for mineral sector operations.",
+    url: "https://www.adamsmineralsconsultancy.com/services/compliance",
+    images: ["/service-compliance.jpg"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Regulatory Compliance & Legal Advisory | Adams Minerals and Consultancy",
+    description: "Expert guidance on mining regulations, trade compliance, and legal advisory for mineral sector operations.",
+    images: ["/service-compliance.jpg"],
+  },
+}
 
 export default function CompliancePage() {
   const services = [
@@ -52,8 +86,34 @@ export default function CompliancePage() {
     }
   ]
 
+  const faqs = [
+    {
+      question: "What mining regulations do you help with?",
+      answer: "We provide comprehensive guidance on mining licenses, environmental permits, safety compliance, land use rights, and all regulatory requirements for mineral extraction and processing operations across multiple jurisdictions.",
+    },
+    {
+      question: "How do you ensure AML/KYC compliance?",
+      answer: "We implement robust AML/KYC procedures including customer due diligence, transaction monitoring, suspicious activity reporting, and comprehensive record-keeping systems that meet international regulatory standards.",
+    },
+    {
+      question: "What is your experience with international trade law?",
+      answer: "Our team has extensive experience in international trade law, including export/import regulations, customs compliance, sanctions screening, and trade documentation across Africa, Middle East, Asia, Europe, and the Americas.",
+    },
+    {
+      question: "Do you provide ongoing compliance monitoring?",
+      answer: "Yes, we offer continuous compliance monitoring services, regulatory updates, periodic audits, and proactive risk assessments to ensure your operations remain compliant with evolving regulations.",
+    },
+  ]
+
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        serviceName="Regulatory Compliance & Legal Advisory"
+        serviceType="Mining Regulations and Trade Compliance Services"
+        description="Expert guidance on mining regulations, trade compliance, and comprehensive legal advisory services for mineral sector operations with AML/KYC expertise."
+        url="https://www.adamsmineralsconsultancy.com/services/compliance"
+      />
+      <FAQSchema faqs={faqs} />
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 mb-4">

@@ -6,6 +6,8 @@ import { Footer } from "@/components/footer"
 import { ErrorBoundary } from "@/components/error-boundary"
 import { CookieBanner } from "@/components/cookie-banner"
 import { BackToTop } from "@/components/back-to-top"
+import { Breadcrumb } from "@/components/breadcrumb"
+import { OrganizationSchema, WebsiteSchema } from "@/components/structured-data"
 import { Suspense } from "react"
 import { Analytics } from '@vercel/analytics/react'
 
@@ -15,11 +17,14 @@ export const metadata: Metadata = {
     "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
   generator: "v0.app",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   openGraph: {
@@ -66,6 +71,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: "https://www.adamsmineralsconsultancy.com",
+  },
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    bing: "your-bing-verification-code",
+  },
 }
 
 export default function RootLayout({
@@ -79,9 +92,12 @@ export default function RootLayout({
         <link rel="preload" href="/video/amcloop.mp4" as="video" type="video/mp4" />
       </head>
       <body className="font-sans">
+        <OrganizationSchema />
+        <WebsiteSchema />
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
             <Navigation />
+            <Breadcrumb />
             <main>{children}</main>
             <Footer />
             <CookieBanner />

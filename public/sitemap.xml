@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.adamsmineralsconsultancy.com/</loc>
-    <lastmod>2024-12-22</lastmod>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -104,7 +104,7 @@
   <!-- Crypto Desk & Digital Payments -->
   <url>
     <loc>https://www.adamsmineralsconsultancy.com/services/crypto-desk</loc>
-    <lastmod>2024-12-22</lastmod>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -112,7 +112,15 @@
   <!-- Regulatory Compliance & Legal Advisory -->
   <url>
     <loc>https://www.adamsmineralsconsultancy.com/services/compliance</loc>
-    <lastmod>2024-12-22</lastmod>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- SKR Tracking -->
+  <url>
+    <loc>https://www.adamsmineralsconsultancy.com/skr-tracking</loc>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
