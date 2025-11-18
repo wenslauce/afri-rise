@@ -1,18 +1,24 @@
-# 💎 Adams Minerals and Consultancy
+# 🌍 Afri-Rise Equity Limited
 
-> **Excellence in Minerals Trading and Strategic Consultancy**
+> **Empowering African Private Sector Growth Through Strategic Investment and Advisory Services**
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.9-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-## 🌍 About Adams Minerals and Consultancy
+## � Abouut Afri-Rise Equity Limited
 
-Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy firm headquartered in **Entebbe, Uganda**. We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, Asia, Europe, and the Americas.
+Afri-Rise Equity Limited is a premier investment and advisory firm dedicated to **African private sector development**. We specialize in providing affordable financing, strategic planning, project management, and investment advisory services that create **communal social impact** across African markets.
 
 ### 🎯 Our Mission
-To deliver excellence in minerals trading, resource assessment, and strategic business consultancy through deep expertise in mineral resources, market analysis, and comprehensive business advisory services.
+To empower African businesses through strategic investment, expert advisory services, and sustainable project financing that drives economic growth while creating positive social impact in communities across the continent.
+
+### 🌍 Our Focus
+- **Private Sector Projects** across 7 key African industries
+- **Affordable Financing** with competitive rates and flexible terms
+- **Social Impact Investment** with measurable community benefits
+- **Global Network** working with thousands of companies worldwide
 
 ---
 
@@ -27,8 +33,8 @@ To deliver excellence in minerals trading, resource assessment, and strategic bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/wenslauce/amc.git
-cd amc
+git clone https://github.com/wenslauce/afri-rise.git
+cd afri-rise
 
 # Install dependencies
 npm install
@@ -48,47 +54,106 @@ Visit [http://localhost:3000](http://localhost:3000) to see the website.
 ## 🏗️ Project Structure
 
 ```
-adams-minerals-consultancy/
-├── 📁 app/                    # Next.js App Router
-│   ├── 📁 api/               # API routes
-│   ├── 📁 services/          # Service pages
-│   ├── 📁 about/             # About page
-│   ├── 📁 news/              # News & updates
-│   └── 📄 layout.tsx         # Root layout
-├── 📁 components/            # Reusable UI components
-├── 📁 lib/                   # Utilities & configurations
-├── 📁 public/                # Static assets & images
-├── 📁 scripts/               # Automation scripts
-└── 📁 .kiro/                 # Development specifications
+afri-rise/
+├── 📁 app/                           # Next.js App Router
+│   ├── 📁 api/                      # API routes
+│   │   ├── contact/                 # Contact form endpoint
+│   │   └── service-quote/           # Service quote endpoint
+│   ├── 📁 services/                 # Service pages (4 main + 23 sub-services)
+│   │   ├── fund-management/         # 6 sub-services
+│   │   ├── project-management/      # 6 sub-services
+│   │   ├── strategic-planning/      # 6 sub-services
+│   │   └── investment-advisory/     # 5 sub-services
+│   ├── 📁 industries/               # 7 industry pages
+│   │   ├── finance/
+│   │   ├── energy/
+│   │   ├── agriculture/
+│   │   ├── infrastructure/
+│   │   ├── ict/
+│   │   ├── insurance/
+│   │   └── greenfield/
+│   ├── 📁 about/                    # About page
+│   ├── 📁 contact/                  # Contact page
+│   └── 📄 layout.tsx                # Root layout
+├── 📁 components/                   # Reusable UI components
+│   ├── ui/                          # Shadcn UI components
+│   ├── navigation.tsx               # Main navigation
+│   ├── footer.tsx                   # Footer with Industries
+│   └── icons.tsx                    # Custom icon components
+├── 📁 lib/                          # Utilities & configurations
+│   ├── email-templates/             # Email templates
+│   └── utils.ts                     # Utility functions
+├── 📁 public/                       # Static assets
+│   ├── images/afri-rise/            # 36 professional images
+│   ├── sitemap.xml                  # SEO sitemap
+│   └── robots.txt                   # Search engine directives
+├── 📁 scripts/                      # Automation scripts
+│   ├── download-pexels-images.js    # Image download script
+│   └── README.md                    # Scripts documentation
+└── 📁 .kiro/                        # Development specifications
+    └── specs/website-rebranding/    # Rebrand documentation
 ```
 
 ---
 
 ## 💼 Core Services
 
-### 🏆 **Minerals Trading**
-- Precious metals (Gold, Silver, Platinum)
-- Industrial minerals
-- Rare earth elements
-- Global market access
+### 💰 **Fund Management**
+Expert fund management solutions for African private sector projects with communal social impact.
 
-### 📊 **Strategic Consultancy**
-- Market analysis & intelligence
-- Business advisory services
-- Strategic planning
-- Operational optimization
+**Sub-Services:**
+- Affordable Financing Solutions
+- Private Sector Project Funding
+- Social Impact Investment
+- Fund Structuring & Administration
+- Portfolio Management
+- Investor Relations
 
-### 🚚 **Trade Facilitation & Finance**
-- End-to-end transaction support
-- Documentation services
-- Financial solutions
-- Risk management
+### 📋 **Project Management**
+Comprehensive project management services for impactful African initiatives across multiple sectors.
 
-### 🔐 **Specialized Services**
-- **Crypto Desk**: Digital payment solutions for international trading
-- **Regulatory Compliance**: Legal advisory and compliance management
-- **Logistics & Supply Chain**: Secure transportation and supply chain management
-- **Investment Advisory**: Strategic investment guidance and wealth management
+**Sub-Services:**
+- Project Planning & Execution
+- Resource Allocation & Optimization
+- Timeline & Budget Management
+- Stakeholder Coordination
+- Risk Mitigation Strategies
+- Quality Assurance & Delivery
+
+### 📊 **Strategic Planning**
+Strategic plans that drive sustainable growth and create lasting social impact across African markets.
+
+**Sub-Services:**
+- Business Strategy Development
+- Market Entry Planning
+- Growth Strategy Formulation
+- Competitive Analysis
+- Organizational Development
+- Performance Metrics & KPIs
+
+### 💡 **Investment Advisory**
+Expert investment advisory services for African business opportunities and sustainable development projects.
+
+**Sub-Services:**
+- Investment Opportunity Analysis
+- Due Diligence Services
+- Financial Modeling & Valuation
+- Risk Assessment & Management
+- Portfolio Diversification
+
+---
+
+## 🏭 Industry Focus
+
+We serve **7 key African industry sectors**:
+
+1. **Finance** - Financial services and banking solutions
+2. **Energy** - Renewable energy and power generation projects
+3. **Agriculture** - Agribusiness and food security initiatives
+4. **Infrastructure** - Commercial infrastructure development
+5. **ICT** - Information and communication technology
+6. **Insurance** - Insurance services and risk management
+7. **Greenfield** - New development projects
 
 ---
 
@@ -98,19 +163,27 @@ adams-minerals-consultancy/
 - **Framework**: Next.js 15.2.4 with App Router
 - **Language**: TypeScript 5.0
 - **Styling**: Tailwind CSS 4.1.9
-- **UI Components**: Radix UI primitives
-- **Icons**: Lucide React
+- **UI Components**: Shadcn UI + Radix UI primitives
+- **Icons**: Custom Lucide React icons
+- **Animations**: Smooth transitions and hover effects
 
 ### **Backend & Services**
 - **API**: Next.js API Routes
 - **Email**: Resend for transactional emails
-- **Database**: Supabase (PostgreSQL)
-- **Analytics**: Vercel Analytics
+- **Forms**: Contact forms and service quote requests
+- **Validation**: Zod schema validation
+
+### **SEO & Performance**
+- **Metadata**: Dynamic SEO optimization
+- **Structured Data**: JSON-LD for rich snippets
+- **Sitemap**: Auto-generated XML sitemap
+- **Images**: Optimized Next.js Image component
+- **Analytics**: Vercel Analytics ready
 
 ### **Development Tools**
 - **Package Manager**: npm
 - **Linting**: ESLint
-- **Code Formatting**: Prettier (via Tailwind)
+- **Type Checking**: TypeScript strict mode
 - **Version Control**: Git
 
 ---
@@ -122,58 +195,67 @@ Create a `.env.local` file with the following variables:
 ```env
 # Email Configuration (Resend)
 RESEND_API_KEY=your_resend_api_key_here
-
-# Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+CONTACT_EMAIL=info@afri-rise.com
 
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_SITE_URL=https://afri-rise.com
+
+# Optional: Analytics
+NEXT_PUBLIC_GA_ID=your_google_analytics_id
+
+# Optional: Pexels API (for image downloads)
+PEXELS_API_KEY=your_pexels_api_key
 ```
 
 ---
 
 ## 🖼️ Image Management
 
-### Automated Image Downloads
-The project includes an automated Pexels integration for professional images:
+### Professional Image Library
+The project includes **36 professional African business images** sourced from Pexels:
 
+**Categories:**
+- Business Meetings (3 images)
+- Strategic Planning (3 images)
+- Project Management (3 images)
+- Investment Advisory (3 images)
+- Fund Management (3 images)
+- Industry-Specific (15 images)
+- Location-Specific (6 images)
+
+### Automated Image Downloads
 ```bash
 # Download all professional images
-npm run download-images
+node scripts/download-pexels-images.js
 ```
 
-### Image Inventory
-- **Service Images**: 8 professional service-specific images
-- **News Images**: 6 news article images
-- **Corporate Images**: Headquarters and branding assets
-- **Social Media**: Optimized og-image for sharing
-
-All images are sourced from [Pexels](https://www.pexels.com) with proper licensing.
+All images are properly licensed from [Pexels](https://www.pexels.com) and optimized for web use.
 
 ---
 
 ## 📱 Features
 
 ### ✨ **User Experience**
-- 📱 Fully responsive design
+- 📱 Fully responsive design (mobile-first)
 - ⚡ Fast loading with Next.js optimization
-- 🎨 Professional UI with Tailwind CSS
-- 🌙 Dark/Light mode support
-- 🍪 GDPR-compliant cookie management
+- 🎨 Professional UI with Afri-Rise branding (#ef393b red)
+- 🔍 Enhanced navigation with Services & Industries dropdowns
+- 📧 Contact forms on all service and industry pages
+- 🎯 Clear CTAs throughout the site
 
 ### 🔧 **Technical Features**
 - 🚀 Server-side rendering (SSR)
-- 📊 Built-in analytics
-- 📧 Contact forms with email integration
-- 🔍 SEO optimized
-- 📱 Progressive Web App (PWA) ready
+- 📊 SEO optimized with metadata and structured data
+- 📧 Email integration with Resend
+- 🔍 XML sitemap for search engines
+- 📱 Progressive enhancement
+- ♿ Accessibility compliant
 
 ### 🛡️ **Security & Compliance**
 - 🔒 Secure API endpoints
-- 📋 Privacy policy & terms of service
-- 🛡️ Input validation and sanitization
+- 📋 Input validation and sanitization
 - 🔐 Environment variable protection
+- �️ CORS and security headers
 
 ---
 
@@ -181,12 +263,20 @@ All images are sourced from [Pexels](https://www.pexels.com) with proper licensi
 
 ### Vercel (Recommended)
 ```bash
-# Deploy to Vercel
-npm run build
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy to production
 vercel --prod
 ```
 
-### Manual Deployment
+### Environment Variables Setup
+Configure these in your Vercel dashboard:
+- `RESEND_API_KEY`
+- `CONTACT_EMAIL`
+- `NEXT_PUBLIC_SITE_URL`
+
+### Build Commands
 ```bash
 # Build for production
 npm run build
@@ -195,45 +285,104 @@ npm run build
 npm start
 ```
 
-### Environment Variables
-Ensure all environment variables are configured in your deployment platform.
-
 ---
 
 ## 📊 Available Scripts
 
 ```bash
 # Development
-npm run dev          # Start development server
+npm run dev          # Start development server (http://localhost:3000)
 npm run build        # Build for production
 npm run start        # Start production server
 npm run lint         # Run ESLint
 
 # Utilities
-npm run download-images    # Download Pexels images
+node scripts/download-pexels-images.js    # Download professional images
 ```
 
 ---
 
-## 🌍 Global Presence
+## 🌍 Global Reach
 
-Adams Minerals and Consultancy operates across multiple continents:
+Afri-Rise operates across African markets with a global network:
 
-- 🌍 **Africa**: Kenya (HQ), East & Central Africa, COMESA, EAC, South Africa, West Africa
-- 🕌 **Middle East**: UAE, Saudi Arabia, Qatar, Turkey
-- 🏯 **Asia-Pacific**: China, India, Southeast Asia
-- 🏰 **Europe**: United Kingdom, European Union
-- 🌎 **Americas**: United States, Brazil, Latin America
+- 🌍 **East Africa**: Kenya, Uganda, Tanzania, Rwanda
+- 🌍 **West Africa**: Nigeria, Ghana, Senegal
+- 🌍 **Southern Africa**: South Africa, Botswana, Zambia
+- 🌍 **North Africa**: Egypt, Morocco
+- 🌍 **Central Africa**: DRC, Cameroon
+- 🌐 **Global Partners**: Working with thousands of companies worldwide
 
 ---
 
 ## 📞 Contact Information
 
-**Headquarters**: Entebbe, Uganda
+**Company**: Afri-Rise Equity Limited
 
-**Services**: Global minerals trading and strategic consultancy
+**Focus**: African Private Sector Investment & Advisory
 
-**Website**: [Contact Form](./contact) for inquiries
+**Services**: Fund Management, Project Management, Strategic Planning, Investment Advisory
+
+**Website**: Contact form available on site
+
+---
+
+## 🎨 Brand Guidelines
+
+### Colors
+- **Primary Red**: #ef393b
+- **Hover Red**: #d73035
+- **Text**: Default theme colors
+- **Background**: Light/Dark mode support
+
+### Typography
+- **Font**: System font stack for optimal performance
+- **Headings**: Bold, clear hierarchy
+- **Body**: Readable, accessible sizing
+
+### Logo & Assets
+- Afri-Rise branding throughout
+- Professional African business imagery
+- Consistent visual identity
+
+---
+
+## 📈 Project Status
+
+### ✅ Completed Features
+- ✅ **Complete Rebrand**: From Adams Minerals to Afri-Rise
+- ✅ **4 Main Service Pages**: All implemented with sub-services
+- ✅ **23 Sub-Service Pages**: Detailed service offerings
+- ✅ **7 Industry Pages**: Complete industry coverage
+- ✅ **36 Professional Images**: Pexels integration complete
+- ✅ **Enhanced Navigation**: Services & Industries dropdowns
+- ✅ **Updated Footer**: Industries section added
+- ✅ **Contact Forms**: All pages with forms
+- ✅ **SEO Optimization**: Metadata, structured data, sitemap
+- ✅ **Mobile Responsive**: Fully responsive design
+
+### 🔄 Ongoing
+- Content updates and refinements
+- Performance optimization
+- Analytics integration
+- User feedback implementation
+
+---
+
+## 📚 Documentation
+
+Comprehensive documentation available in the `.kiro/specs/website-rebranding/` directory:
+
+- **Requirements**: Feature requirements and user stories
+- **Design**: Design specifications and architecture
+- **Tasks**: Implementation task list
+- **Status Reports**: 
+  - Fund Management Sub-Services Complete
+  - Project Management Sub-Services Complete
+  - Strategic Planning Sub-Services Complete
+  - Investment Advisory Sub-Services Complete
+  - Industry Pages Status
+  - Image Audit Report
 
 ---
 
@@ -247,39 +396,70 @@ We welcome contributions to improve the website. Please follow these steps:
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
+### Development Guidelines
+- Follow TypeScript best practices
+- Maintain responsive design principles
+- Ensure accessibility compliance
+- Write clear commit messages
+- Test across different devices
+
 ---
 
 ## 📄 License
 
-This project is proprietary software owned by **Adams Minerals and Consultancy Limited**.
+This project is proprietary software owned by **Afri-Rise Equity Limited**.
+
+All rights reserved. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
 
 ---
 
 ## 🔗 Links
 
-- **Website**: [Live Site](https://your-domain.com)
-- **Repository**: [GitHub](https://github.com/wenslauce/amc)
-- **Issues**: [Report Issues](https://github.com/wenslauce/amc/issues)
+- **Repository**: [GitHub](https://github.com/wenslauce/afri-rise)
+- **Issues**: [Report Issues](https://github.com/wenslauce/afri-rise/issues)
 - **Documentation**: [Project Specs](./.kiro/specs/website-rebranding/)
+- **Previous Version**: [AMC Repository](https://github.com/wenslauce/amc) (archived)
 
 ---
 
-## 📈 Project Status
+## 🙏 Acknowledgments
 
-- ✅ **Core Website**: Complete
-- ✅ **Service Pages**: All 8 services implemented
-- ✅ **Professional Images**: Pexels integration complete
-- ✅ **Contact Forms**: Email integration active
-- ✅ **SEO Optimization**: Implemented
-- ✅ **Mobile Responsive**: Fully responsive
-- 🔄 **Ongoing**: Content updates and enhancements
+- **Pexels**: Professional photography platform
+- **Next.js**: React framework
+- **Vercel**: Deployment platform
+- **Shadcn UI**: Component library
+- **Tailwind CSS**: Utility-first CSS framework
+
+---
+
+## 📝 Changelog
+
+### Version 2.0.0 (November 2025)
+- 🎉 Complete rebrand to Afri-Rise Equity Limited
+- ✨ Added 23 sub-service pages across 4 main services
+- 🏭 Added 7 industry-specific pages
+- 🖼️ Integrated 36 professional African business images
+- 🎨 Updated branding, colors, and visual identity
+- 📱 Enhanced navigation with dropdown menus
+- 📧 Added contact forms to all service and industry pages
+- 🔍 Improved SEO with metadata and structured data
+- 📊 Updated footer with Industries section
+
+### Version 1.0.0 (Previous)
+- Initial Adams Minerals and Consultancy website
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for Adams Minerals and Consultancy**
+**Built with ❤️ for Afri-Rise Equity Limited**
 
-*Excellence in Minerals Trading and Strategic Consultancy*
+*Empowering African Private Sector Growth*
 
-</div>"
+🌍 **Africa Rising** 🚀
+
+---
+
+**[Visit Website](#) | [Contact Us](#) | [View Services](#)**
+
+</div>
