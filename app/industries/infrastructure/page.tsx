@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
+import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
 import Link from "next/link"
 import { ArrowRight, Building2, MapPin, Truck, Home, CheckCircle } from "@/components/icons"
 import type { Metadata } from "next"
@@ -83,24 +81,10 @@ export default function InfrastructurePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Get Infrastructure Consultation</h2>
           </div>
-          <Card>
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2"><Label htmlFor="name">Full Name *</Label><Input id="name" required /></div>
-                  <div className="space-y-2"><Label htmlFor="email">Email *</Label><Input id="email" type="email" required /></div>
-                </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2"><Label htmlFor="phone">Phone</Label><Input id="phone" type="tel" /></div>
-                  <div className="space-y-2"><Label htmlFor="company">Company</Label><Input id="company" /></div>
-                </div>
-                <div className="space-y-2"><Label htmlFor="project">Project Details *</Label><Textarea id="project" rows={5} required /></div>
-                <Button type="submit" size="lg" className="w-full bg-[#ef393b] text-white hover:bg-[#d73035]">
-                  Request Consultation <ArrowRight className="ml-2" size={20} />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          <ServiceOnboardingForm
+            serviceName="Infrastructure Sector Inquiry"
+            serviceDescription="Get expert fund management and consultancy for your infrastructure project in Africa."
+          />
         </div>
       </section>
 
