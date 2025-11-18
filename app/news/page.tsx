@@ -5,76 +5,76 @@ import { Calendar } from "lucide-react"
 export default function NewsPage() {
   const newsArticles = [
     {
-      title: "Adams Minerals and Consultancy Expands Operations to West Africa",
-      date: "October 10, 2025",
-      category: "Expansion",
+      title: "Afri-Rise Launches $50M Fund for African Infrastructure Projects",
+      date: "November 15, 2025",
+      category: "Fund Launch",
       excerpt:
-        "Adams Minerals and Consultancy announces strategic expansion into West African markets, establishing new partnerships in Nigeria, Ghana, and Senegal to support growing demand for minerals trading and consultancy services.",
-      image: "/news-expansion-west-africa.jpg",
+        "Afri-Rise Equity Limited announces the launch of its inaugural $50M fund dedicated to financing infrastructure projects across East and West Africa, focusing on sustainable development and economic growth.",
+      image: "/news-fund-launch.jpg",
     },
     {
-      title: "New Partnership with Leading Mineral Processing Facility",
-      date: "September 28, 2025",
+      title: "Strategic Partnership with Leading African Development Bank",
+      date: "November 1, 2025",
       category: "Partnerships",
       excerpt:
-        "Adams Minerals and Consultancy signs major partnership agreement with prominent mineral processing facility, enhancing precious metals trading capabilities and supply chain reliability for African markets.",
-      image: "/news-mineral-partnership.jpg",
+        "Afri-Rise signs major partnership agreement with prominent African development bank, enhancing capital deployment capabilities and expanding reach across the continent.",
+      image: "/news-partnership.jpg",
     },
     {
-      title: "Record Quarter for Minerals Trading Division",
-      date: "September 15, 2025",
-      category: "Performance",
+      title: "Afri-Rise Completes First Major Investment in Kenyan Energy Sector",
+      date: "October 20, 2025",
+      category: "Investments",
       excerpt:
-        "Adams Minerals and Consultancy reports record-breaking quarter with $50M+ in facilitated mineral transactions, demonstrating strong demand for specialized minerals trading and consultancy services across Africa.",
-      image: "/news-minerals-growth.jpg",
+        "Successfully closed $15M investment in renewable energy project in Kenya, demonstrating commitment to sustainable infrastructure development and clean energy transition.",
+      image: "/news-energy-investment.jpg",
     },
     {
-      title: "Adams Minerals and Consultancy Launches Enhanced Tracking Platform",
-      date: "August 30, 2025",
-      category: "Technology",
+      title: "Expansion into West African Markets Announced",
+      date: "October 5, 2025",
+      category: "Expansion",
       excerpt:
-        "New digital platform provides real-time tracking and enhanced security features for mineral shipments, setting new industry standards for minerals trading transparency and security.",
-      image: "/news-tracking-platform-launch.jpg",
+        "Afri-Rise announces strategic expansion into Nigeria, Ghana, and Senegal, establishing regional offices to support growing portfolio of private sector projects.",
+      image: "/news-expansion.jpg",
     },
     {
-      title: "Sustainable Mining Initiative Reaches Major Milestone",
-      date: "August 12, 2025",
-      category: "Sustainability",
-      excerpt:
-        "Adams Minerals and Consultancy reaches milestone with sustainable mining consultancy projects across East Africa, contributing to responsible mineral extraction practices.",
-      image: "/news-sustainability-milestone.jpg",
-    },
-    {
-      title: "Adams Minerals and Consultancy Receives Industry Excellence Award",
-      date: "July 25, 2025",
+      title: "Afri-Rise Receives Excellence in Fund Management Award",
+      date: "September 28, 2025",
       category: "Awards",
       excerpt:
-        "Recognized for outstanding contribution to minerals trading and strategic consultancy at the African Mining Excellence Awards 2025.",
-      image: "/news-industry-award.jpg",
+        "Recognized for outstanding contribution to African private sector development at the African Investment Excellence Awards 2025.",
+      image: "/news-award.jpg",
+    },
+    {
+      title: "New Agricultural Investment Initiative Launched",
+      date: "September 15, 2025",
+      category: "Initiatives",
+      excerpt:
+        "Afri-Rise launches specialized agricultural investment program targeting smallholder farmers and agribusiness enterprises across East Africa.",
+      image: "/news-agriculture.jpg",
     },
   ]
 
   const insights = [
     {
-      title: "The Future of Minerals Trading in Africa",
-      date: "October 5, 2025",
+      title: "The Future of Private Sector Investment in Africa",
+      date: "November 10, 2025",
       category: "Industry Insights",
       excerpt:
-        "Exploring emerging trends in African minerals trading, including digital transformation, regulatory harmonization, and the role of specialized consultancy services.",
+        "Exploring emerging trends in African private sector financing, including impact investing, blended finance structures, and the role of specialized fund managers in driving economic development.",
     },
     {
-      title: "Managing Risk in Precious Metals Trading",
-      date: "September 20, 2025",
-      category: "Risk Management",
+      title: "Affordable Financing Models for African Enterprises",
+      date: "October 25, 2025",
+      category: "Financial Innovation",
       excerpt:
-        "Best practices for mitigating risk in precious metals trading, from due diligence and market analysis to secure logistics and compliance management.",
+        "Analysis of innovative financing structures that make capital more accessible to African businesses, from revenue-based financing to patient capital models.",
     },
     {
-      title: "Strategic Consultancy for Mining Operations in East Africa",
-      date: "September 5, 2025",
-      category: "Consultancy",
+      title: "Strategic Planning for Sustainable Growth in African Markets",
+      date: "October 10, 2025",
+      category: "Strategic Planning",
       excerpt:
-        "Analysis of the growing mining sector in East Africa and opportunities for strategic business advisory and operational optimization.",
+        "Best practices for developing and executing growth strategies in African markets, with focus on local partnerships, regulatory navigation, and long-term value creation.",
     },
   ]
 
@@ -86,7 +86,7 @@ export default function NewsPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">News & Insights</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Stay updated with the latest developments, partnerships, and industry insights from Adams Minerals and Consultancy.
+              Stay updated with the latest developments, investments, and industry insights from Afri-Rise.
             </p>
           </div>
         </div>
@@ -160,11 +160,11 @@ export default function NewsPage() {
             <CardContent className="p-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Stay Informed</h2>
               <p className="text-lg text-primary-foreground/90 mb-6">
-                Subscribe to our newsletter for the latest updates on minerals trading, market insights, and Adams Minerals and Consultancy
+                Subscribe to our newsletter for the latest updates on fund management, investment opportunities, and Afri-Rise
                 news.
               </p>
               <p className="text-sm text-primary-foreground/80">
-                Contact us at info@adamsmineralsconsultancy.com to subscribe to our newsletter.
+                Contact us at info@afri-rise.com to subscribe to our newsletter.
               </p>
             </CardContent>
           </Card>

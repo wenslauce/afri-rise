@@ -15,7 +15,7 @@ export default function CaseStudiesPage() {
       challenge:
         "A major mining corporation needed to export high-value mineral consignments from East Africa to Asia with comprehensive security and financing.",
       solution:
-        "G1 Group provided end-to-end facilitation including structured trade finance, SKR-secured logistics with armed escort, marine insurance coverage, and customs coordination across multiple jurisdictions.",
+        "Afri-Rise provided end-to-end facilitation including structured trade finance, SKR-secured logistics with armed escort, marine insurance coverage, and customs coordination across multiple jurisdictions.",
       results: [
         "100% secure delivery with zero incidents",
         "30% reduction in transaction costs",
@@ -32,7 +32,7 @@ export default function CaseStudiesPage() {
       challenge:
         "An established coffee exporter required working capital financing and reliable logistics for seasonal exports to multiple international markets.",
       solution:
-        "G1 Group structured a revolving trade finance facility, connected the exporter with premium buyers in Europe and Middle East, and coordinated freight and customs clearance.",
+        "Afri-Rise structured a revolving trade finance facility, connected the exporter with premium buyers in Europe and Middle East, and coordinated freight and customs clearance.",
       results: [
         "Secured 40% higher prices through premium buyer network",
         "Improved cash flow with flexible financing terms",
@@ -49,7 +49,7 @@ export default function CaseStudiesPage() {
       challenge:
         "A regional energy distributor needed reliable oil & gas supply with comprehensive risk management and logistics coordination.",
       solution:
-        "G1 Group established direct sourcing relationships with Middle East suppliers, structured insurance coverage, and managed end-to-end logistics including port operations and inland distribution.",
+        "Afri-Rise established direct sourcing relationships with Middle East suppliers, structured insurance coverage, and managed end-to-end logistics including port operations and inland distribution.",
       results: [
         "Reduced supply costs by 18%",
         "Achieved 99.8% on-time delivery rate",
@@ -66,7 +66,7 @@ export default function CaseStudiesPage() {
       challenge:
         "A growing manufacturing SME required capital for expansion and operational restructuring to improve efficiency and competitiveness.",
       solution:
-        "G1 Group provided corporate financing, conducted operational assessment, implemented performance improvement strategies, and delivered compliance training.",
+        "Afri-Rise provided corporate financing, conducted operational assessment, implemented performance improvement strategies, and delivered compliance training.",
       results: [
         "Secured $5M expansion capital",
         "Improved operational efficiency by 35%",
@@ -83,7 +83,7 @@ export default function CaseStudiesPage() {
       challenge:
         "A solar developer needed project financing and EPC services for a large-scale commercial solar installation.",
       solution:
-        "G1 Group structured project financing, managed EPC delivery, and negotiated power purchase agreements with off-takers.",
+        "Afri-Rise structured project financing, managed EPC delivery, and negotiated power purchase agreements with off-takers.",
       results: [
         "Successfully financed and delivered 10MW solar project",
         "Secured 20-year power purchase agreement",
@@ -100,7 +100,7 @@ export default function CaseStudiesPage() {
       challenge:
         "A high-net-worth family required sophisticated investment structuring and asset preservation strategies across multiple jurisdictions.",
       solution:
-        "G1 Group developed diversified investment portfolio, structured offshore holdings, and implemented comprehensive asset protection strategies.",
+        "Afri-Rise developed diversified investment portfolio, structured offshore holdings, and implemented comprehensive asset protection strategies.",
       results: [
         "Achieved 12% average annual returns",
         "Optimized tax efficiency across jurisdictions",
@@ -118,7 +118,7 @@ export default function CaseStudiesPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Case Studies & Success Stories</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Real-world examples of how G1 Group delivers value across diverse industries and geographies.
+              Real-world examples of how Afri-Rise delivers value across diverse industries and geographies.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Create Your Success Story?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
-            Let's discuss how G1 Group can facilitate your next high-value transaction.
+            Let's discuss how Afri-Rise can facilitate your next high-value transaction.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link href="/contact">

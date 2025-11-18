@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Adams Minerals and Consultancy theme - navy (#373f51), red (#ef393b), gold (#d4af37) */
+  /* Afri-Rise theme - navy (#373f51), red (#ef393b), gold (#d4af37) */
   --background: oklch(0.99 0.002 106.423);
   --foreground: oklch(0.25 0.02 255.324);
   --card: oklch(1 0 0);
@@ -164,8 +164,8 @@
     @apply bg-primary-foreground/10 border-primary-foreground/20 transition-all duration-300;
   }
 
-  /* Adams Minerals and Consultancy brand colors - using !important for specificity */
-  .amc-red {
+  /* Afri-Rise brand colors - using !important for specificity */
+  .afri-rise-red {
     color: #ef393b !important;
   }
 

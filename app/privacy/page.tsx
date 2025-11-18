@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             {/* Introduction */}
             <div className="mb-12">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Adams Minerals and Consultancy Limited ("Adams Minerals and Consultancy," "we," "us," or "our") is committed to protecting your
+                Afri-Rise Equity Limited ("Afri-Rise," "we," "us," or "our") is committed to protecting your
                 privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
                 you visit our website or use our services.
               </p>
@@ -66,9 +66,9 @@ export default function PrivacyPolicyPage() {
               <div className="space-y-4 text-muted-foreground">
                 <p>We use the information we collect to:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Provide, operate, and maintain our minerals trading and consultancy services</li>
+                  <li>Provide, operate, and maintain our fund management and consultancy services</li>
                   <li>Process transactions and manage client relationships</li>
-                  <li>Communicate with you about services, updates, and business opportunities</li>
+                  <li>Communicate with you about services, updates, and investment opportunities</li>
                   <li>Comply with legal obligations, including KYC and AML requirements</li>
                   <li>Improve our website, services, and customer experience</li>
                   <li>Detect, prevent, and address fraud, security issues, and technical problems</li>
@@ -87,11 +87,11 @@ export default function PrivacyPolicyPage() {
                 <p>We may share your information with:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>
-                    <strong>Service Providers:</strong> Third-party mining, logistics, and financial service
+                    <strong>Service Providers:</strong> Third-party financial, legal, and technical service
                     providers who assist in delivering our services
                   </li>
                   <li>
-                    <strong>Business Partners:</strong> Authorized partners and subsidiaries within the Adams Minerals and Consultancy network
+                    <strong>Business Partners:</strong> Authorized partners and subsidiaries within the Afri-Rise network
                   </li>
                   <li>
                     <strong>Legal Authorities:</strong> Government agencies, regulators, and law enforcement when
@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                 </ul>
                 <p className="mt-4">
-                  To exercise these rights, please contact us at privacy@adamsmineralsconsultancy.com. We will respond to your request
+                  To exercise these rights, please contact us at privacy@afri-rise.com. We will respond to your request
                   within 30 days.
                 </p>
               </div>
@@ -181,13 +181,13 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">6. International Data Transfers</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  As a global minerals and consultancy company, we may transfer your information to countries outside your
+                  As a global fund management and consultancy company, we may transfer your information to countries outside your
                   jurisdiction. We ensure appropriate safeguards are in place, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Standard contractual clauses approved by relevant authorities</li>
                   <li>Adequacy decisions recognizing equivalent data protection standards</li>
-                  <li>Binding corporate rules within the Adams Minerals and Consultancy network</li>
+                  <li>Binding corporate rules within the Afri-Rise network</li>
                 </ul>
               </div>
             </div>
@@ -254,11 +254,11 @@ export default function PrivacyPolicyPage() {
                   If you have questions or concerns about this Privacy Policy or our data practices, please contact:
                 </p>
                 <div className="bg-muted p-6 rounded-lg mt-4">
-                  <p className="font-semibold text-foreground">Adams Minerals and Consultancy Limited</p>
+                  <p className="font-semibold text-foreground">Afri-Rise Equity Limited</p>
                   <p>Data Protection Officer</p>
-                  <p>Email: info@adamsmineralsconsultancy.com</p>
-                  <p>Phone: +256784850601</p>
-                  <p>Address: Broadway, National Road, Entebbe, Uganda</p>
+                  <p>Email: info@afri-rise.com</p>
+                  <p>Phone: +1 917-730-2179</p>
+                  <p>Address: WU YI Plaza, Muthithi Road, Westlands, Nairobi, Kenya</p>
                 </div>
               </div>
             </div>

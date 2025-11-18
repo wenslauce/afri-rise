@@ -9,73 +9,73 @@ export default function CareersPage() {
     {
       icon: Users,
       title: "Collaborative Culture",
-      description: "Work with talented professionals across multiple disciplines and geographies.",
+      description: "Work with talented professionals across fund management, investment advisory, and strategic planning.",
     },
     {
       icon: TrendingUp,
       title: "Career Growth",
-      description: "Continuous learning opportunities and clear paths for professional advancement.",
+      description: "Continuous learning opportunities and clear paths for professional advancement in African finance.",
     },
     {
       icon: Globe2,
-      title: "Global Exposure",
-      description: "Engage with international clients and partners across five continents.",
+      title: "Pan-African Impact",
+      description: "Contribute to projects that drive economic development across the African continent.",
     },
     {
       icon: Briefcase,
-      title: "Impactful Work",
-      description: "Contribute to high-value transactions that drive economic growth and development.",
+      title: "Meaningful Work",
+      description: "Support African businesses and infrastructure projects that create lasting positive impact.",
     },
   ]
 
   const openPositions = [
     {
-      title: "Trade Finance Manager",
-      department: "Trade Finance",
-      location: "Entebbe, Uganda",
+      title: "Investment Analyst",
+      department: "Investment Advisory",
+      location: "Nairobi, Kenya",
       type: "Full-time",
       description:
-        "Lead structured trade finance deals, manage client relationships, and coordinate with international banking partners.",
+        "Conduct financial analysis, due diligence, and market research for potential investments across African private sector projects.",
     },
     {
-      title: "Commodities Trader",
-      department: "Commodities Trading",
-      location: "Entebbe, Uganda",
+      title: "Fund Manager",
+      department: "Fund Management",
+      location: "Nairobi, Kenya",
       type: "Full-time",
       description:
-        "Execute commodity trades, manage supplier and buyer relationships, and analyze market trends for agricultural products and metals.",
+        "Manage investment portfolios, oversee capital deployment, and maintain relationships with investors and portfolio companies.",
     },
     {
-      title: "Logistics Coordinator",
-      department: "Logistics & Security",
-      location: "Entebbe, Uganda",
+      title: "Strategic Planning Consultant",
+      department: "Strategic Planning",
+      location: "Nairobi, Kenya",
       type: "Full-time",
       description:
-        "Coordinate cross-border shipments, manage customs clearance, and oversee SKR-secured logistics operations.",
+        "Develop growth strategies, conduct market analysis, and provide strategic advisory services to African enterprises.",
     },
     {
-      title: "Risk Analyst",
-      department: "Risk Advisory",
-      location: "Entebbe, Uganda",
+      title: "Project Manager",
+      department: "Project Management",
+      location: "Nairobi, Kenya / Remote",
       type: "Full-time",
       description:
-        "Conduct due diligence, assess transaction risks, and develop risk mitigation strategies for high-value deals.",
+        "Oversee project execution, coordinate stakeholders, and ensure successful delivery of infrastructure and development projects.",
+    },
+    {
+      title: "Financial Analyst",
+      department: "Investment Advisory",
+      location: "Nairobi, Kenya",
+      type: "Full-time",
+      description:
+        "Build financial models, assess investment opportunities, and support portfolio management activities.",
     },
     {
       title: "Business Development Manager",
       department: "Business Development",
-      location: "Entebbe, Uganda / Dubai, UAE",
+      location: "Nairobi, Kenya / Lagos, Nigeria",
       type: "Full-time",
       description:
-        "Identify new business opportunities, develop strategic partnerships, and expand G1 Group's market presence.",
-    },
-    {
-      title: "Solar Project Engineer",
-      department: "Energy Solutions",
-      location: "Entebbe, Uganda",
-      type: "Full-time",
-      description:
-        "Design and oversee commercial solar installations, manage EPC projects, and ensure quality delivery.",
+        "Identify new investment opportunities, develop strategic partnerships, and expand Afri-Rise's market presence across Africa.",
     },
   ]
 
@@ -85,10 +85,9 @@ export default function CareersPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Careers at G1 Group</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Careers at Afri-Rise</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Join a dynamic team facilitating high-value trade across borders and making a real impact on global
-              commerce.
+              Join a dynamic team driving African economic development through strategic investments and expert consultancy.
             </p>
           </div>
         </div>
@@ -100,7 +99,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Work With Us</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Be part of a team that's redefining cross-border trade facilitation
+              Be part of a team that's transforming African private sector development
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -122,7 +121,7 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Open Positions</h2>
-            <p className="text-lg text-muted-foreground">Join our team and help shape the future of global trade</p>
+            <p className="text-lg text-muted-foreground">Join our team and help shape the future of African investment</p>
           </div>
           <div className="space-y-4">
             {openPositions.map((position, index) => (
@@ -164,7 +163,7 @@ export default function CareersPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Market-leading salaries with performance-based bonuses and incentives.
+                  Market-leading salaries with performance-based bonuses and equity participation opportunities.
                 </p>
               </CardContent>
             </Card>
@@ -174,7 +173,7 @@ export default function CareersPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Training programs, certifications, and opportunities for continuous learning.
+                  Training programs, certifications, and opportunities for continuous learning in finance and investment.
                 </p>
               </CardContent>
             </Card>
@@ -183,16 +182,16 @@ export default function CareersPage() {
                 <CardTitle>Health & Wellness</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Comprehensive health insurance and wellness programs.</p>
+                <p className="text-muted-foreground">Comprehensive health insurance and wellness programs for you and your family.</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>International Exposure</CardTitle>
+                <CardTitle>Pan-African Exposure</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Opportunities to work with international clients and travel globally.
+                  Opportunities to work on projects across multiple African countries and build a continental network.
                 </p>
               </CardContent>
             </Card>
@@ -206,11 +205,11 @@ export default function CareersPage() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Team Culture</CardTitle>
+                <CardTitle>Impact-Driven Culture</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Collaborative environment with regular team building and social events.
+                  Work on projects that create real economic and social impact across Africa.
                 </p>
               </CardContent>
             </Card>
@@ -223,8 +222,7 @@ export default function CareersPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Don't See the Right Role?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
-            We're always looking for talented individuals. Send us your CV and let us know how you can contribute to G1
-            Group.
+            We're always looking for talented individuals passionate about African development. Send us your CV and let us know how you can contribute to Afri-Rise.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link href="/contact">

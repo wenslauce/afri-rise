@@ -23,8 +23,8 @@ export default function TermsOfServicePage() {
             {/* Introduction */}
             <div className="mb-12">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                These Terms of Service ("Terms") govern your access to and use of the services provided by Adams Minerals 
-                and Consultancy Limited ("Adams Minerals and Consultancy," "we," "us," or "our"). By accessing or using our services, you agree to be
+                These Terms of Service ("Terms") govern your access to and use of the services provided by Afri-Rise 
+                Equity Limited ("Afri-Rise," "we," "us," or "our"). By accessing or using our services, you agree to be
                 bound by these Terms.
               </p>
             </div>
@@ -37,12 +37,12 @@ export default function TermsOfServicePage() {
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  By accessing our website, engaging our services, or entering into any agreement with Adams Minerals and Consultancy, you
+                  By accessing our website, engaging our services, or entering into any agreement with Afri-Rise, you
                   acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy
                   Policy. If you do not agree to these Terms, you must not use our services.
                 </p>
                 <p>
-                  These Terms constitute a legally binding agreement between you and Adams Minerals and Consultancy Limited. We
+                  These Terms constitute a legally binding agreement between you and Afri-Rise Equity Limited. We
                   reserve the right to modify these Terms at any time, and such modifications will be effective
                   immediately upon posting.
                 </p>
@@ -56,14 +56,14 @@ export default function TermsOfServicePage() {
                 <h2 className="text-2xl font-bold text-foreground">2. Services Description</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
-                <p>Adams Minerals and Consultancy provides the following services:</p>
+                <p>Afri-Rise provides the following services:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Minerals trading and brokerage services</li>
-                  <li>Strategic consultancy and business advisory</li>
-                  <li>Resource assessment and evaluation</li>
-                  <li>Market analysis and intelligence</li>
-                  <li>Trade facilitation and coordination</li>
-                  <li>Business development and strategic planning</li>
+                  <li>Fund management and capital deployment</li>
+                  <li>Investment advisory and portfolio management</li>
+                  <li>Strategic planning and business development</li>
+                  <li>Project management and execution</li>
+                  <li>Financial structuring and due diligence</li>
+                  <li>Market analysis and opportunity assessment</li>
                 </ul>
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mt-6">
                   <div className="flex items-start gap-3">
@@ -71,8 +71,8 @@ export default function TermsOfServicePage() {
                     <div>
                       <p className="font-semibold text-amber-900">Important Notice</p>
                       <p className="text-amber-800 text-sm mt-1">
-                        Adams Minerals and Consultancy operates as a specialized minerals trading and strategic consultancy firm. 
-                        We provide expert guidance and facilitate transactions through our network of licensed partners and service providers.
+                        Afri-Rise operates as a specialized fund management and consultancy firm focused on African private sector projects. 
+                        We provide expert guidance and facilitate investments through our network of licensed partners and service providers.
                       </p>
                     </div>
                   </div>
@@ -140,24 +140,24 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Adams Minerals and Consultancy acts as a specialized consultant and facilitator. We are not liable for the actions, omissions,
+                  Afri-Rise acts as a specialized consultant and facilitator. We are not liable for the actions, omissions,
                   or performance of third-party service providers, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Mining and extraction operators</li>
-                  <li>Transportation and logistics providers</li>
-                  <li>Financial institutions and trade financiers</li>
-                  <li>Mineral suppliers and buyers</li>
-                  <li>Storage and processing facilities</li>
+                  <li>Project developers and operators</li>
+                  <li>Financial institutions and lenders</li>
+                  <li>Investment partners and co-investors</li>
+                  <li>Legal and regulatory advisors</li>
+                  <li>Technical and operational consultants</li>
                 </ul>
                 <p className="mt-4">
-                  To the maximum extent permitted by law, Adams Minerals and Consultancy shall not be liable for any indirect, incidental,
+                  To the maximum extent permitted by law, Afri-Rise shall not be liable for any indirect, incidental,
                   special, consequential, or punitive damages, including loss of profits, revenue, data, or business
                   opportunities.
                 </p>
                 <p>
                   Our total liability for any claims arising from our services shall not exceed the fees paid by you to
-                  Adams Minerals and Consultancy in the 12 months preceding the claim.
+                  Afri-Rise in the 12 months preceding the claim.
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">7. Indemnification</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  You agree to indemnify, defend, and hold harmless Adams Minerals and Consultancy, its affiliates, officers, directors,
+                  You agree to indemnify, defend, and hold harmless Afri-Rise, its affiliates, officers, directors,
                   employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including
                   reasonable attorneys' fees) arising from:
                 </p>
@@ -187,7 +187,7 @@ export default function TermsOfServicePage() {
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   All content, trademarks, logos, and intellectual property on our website and in our materials are
-                  owned by or licensed to Adams Minerals and Consultancy. You may not use, reproduce, modify, or distribute any content
+                  owned by or licensed to Afri-Rise. You may not use, reproduce, modify, or distribute any content
                   without our prior written consent.
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">10. Termination</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Either party may terminate services with written notice as specified in the service agreement. Adams Minerals and Consultancy
+                  Either party may terminate services with written notice as specified in the service agreement. Afri-Rise
                   reserves the right to immediately suspend or terminate services if:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
@@ -235,7 +235,7 @@ export default function TermsOfServicePage() {
                   negotiations. If negotiations fail, disputes shall be resolved through arbitration in accordance with
                   the rules of the Nairobi Centre for International Arbitration (NCIA).
                 </p>
-                <p>The arbitration shall be conducted in English in Entebbe, Uganda.</p>
+                <p>The arbitration shall be conducted in English in Nairobi, Kenya.</p>
               </div>
             </div>
 
@@ -267,11 +267,11 @@ export default function TermsOfServicePage() {
               <div className="space-y-4 text-muted-foreground">
                 <p>For questions about these Terms of Service, please contact:</p>
                 <div className="bg-muted p-6 rounded-lg mt-4">
-                  <p className="font-semibold text-foreground">Adams Minerals and Consultancy Limited</p>
+                  <p className="font-semibold text-foreground">Afri-Rise Equity Limited</p>
                   <p>Legal Department</p>
-                  <p>Email: info@adamsmineralsconsultancy.com</p>
-                  <p>Phone: +256784850601</p>
-                  <p>Address: Broadway, National Road, Entebbe, Uganda</p>
+                  <p>Email: info@afri-rise.com</p>
+                  <p>Phone: +1 917-730-2179</p>
+                  <p>Address: WU YI Plaza, Muthithi Road, Westlands, Nairobi, Kenya</p>
                 </div>
               </div>
             </div>

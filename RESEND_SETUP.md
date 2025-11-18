@@ -1,11 +1,11 @@
 # Resend Email Configuration Setup
 
-This guide explains how to configure Resend email functionality for the Adams Minerals and Consultancy website.
+This guide explains how to configure Resend email functionality for the Afri-Rise website.
 
 ## Prerequisites
 
 1. **Resend Account**: Sign up at [resend.com](https://resend.com)
-2. **Domain Verification**: Verify your domain `adamsmineralsconsultancy.com` in Resend
+2. **Domain Verification**: Verify your domain `afri-rise.com` in Resend
 3. **API Key**: Generate an API key from your Resend dashboard
 
 ## Environment Variables
@@ -15,15 +15,15 @@ Create a `.env.local` file in the root directory with the following variables:
 ```env
 # Resend Email Configuration
 RESEND_API_KEY=re_your_api_key_here
-FROM_EMAIL=noreply@adamsmineralsconsultancy.com
-TO_EMAIL=info@adamsmineralsconsultancy.com
+FROM_EMAIL=noreply@afri-rise.com
+TO_EMAIL=info@afri-rise.com
 
 # Optional: Additional email addresses for different departments
-SUPPORT_EMAIL=support@adamsmineralsconsultancy.com
-SALES_EMAIL=sales@adamsmineralsconsultancy.com
+SUPPORT_EMAIL=support@afri-rise.com
+INVESTMENTS_EMAIL=investments@afri-rise.com
 
 # Next.js Configuration
-NEXT_PUBLIC_SITE_URL=https://adamsmineralsconsultancy.com
+NEXT_PUBLIC_SITE_URL=https://afri-rise.com
 ```
 
 ## Email Templates
@@ -69,7 +69,7 @@ The system includes two types of email templates:
 - ✅ Next steps guidance
 - ✅ Emergency contact details
 
-### For Adams Minerals and Consultancy Team (Notification Emails)
+### For Afri-Rise Team (Notification Emails)
 - ✅ Complete form data
 - ✅ Priority indicators
 - ✅ Action requirements
