@@ -4,29 +4,29 @@ import { MapPin } from "@/components/icons"
 export function GlobalReachSection() {
   const regions = [
     {
-      name: "Africa",
-      description: "Kenya, South Africa, Nigeria, Ghana, Tanzania",
-      markets: "15+ active markets",
+      name: "East Africa",
+      description: "Kenya, Tanzania, Uganda, Rwanda, Burundi - COMESA & EAC markets",
+      markets: "Primary focus region",
+    },
+    {
+      name: "West Africa",
+      description: "Nigeria, Ghana, Senegal, Côte d'Ivoire - ECOWAS markets",
+      markets: "Expanding presence",
+    },
+    {
+      name: "Southern Africa",
+      description: "South Africa, Botswana, Zambia, Zimbabwe - SADC markets",
+      markets: "Strategic partnerships",
+    },
+    {
+      name: "North Africa",
+      description: "Egypt, Morocco, Tunisia - Mediterranean gateway",
+      markets: "Growing network",
     },
     {
       name: "Middle East",
-      description: "UAE, Saudi Arabia, Qatar, Kuwait, Bahrain",
-      markets: "8+ key hubs",
-    },
-    {
-      name: "Asia",
-      description: "China, India, Singapore, Hong Kong, Malaysia",
-      markets: "12+ trading centers",
-    },
-    {
-      name: "Europe",
-      description: "UK, Germany, Netherlands, Switzerland, Belgium",
-      markets: "10+ financial centers",
-    },
-    {
-      name: "Americas",
-      description: "USA, Canada, Brazil, Mexico, Colombia",
-      markets: "9+ major ports",
+      description: "UAE (Dubai office), Saudi Arabia, Qatar - Investment hubs",
+      markets: "Regional office",
     },
   ]
 
@@ -34,9 +34,9 @@ export function GlobalReachSection() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Global Presence, Local Expertise</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">African Focus, Global Connections</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Operating across five continents with strategic partnerships and local market knowledge
+            Serving African businesses with offices in Nairobi and Dubai, backed by Ronami Group's international network
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">

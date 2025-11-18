@@ -1049,3 +1049,104 @@ export const Star = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>
     <polygon points="12 2 15.09 10.26 24 10.5 17.55 16.16 19.98 24.5 12 18.92 4.02 24.5 6.45 16.16 0 10.5 8.91 10.26 12 2" />
   </svg>
 )
+
+
+export const Lightbulb = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    {...props}
+  >
+    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+    <path d="M9 18h6" />
+    <path d="M10 22h4" />
+  </svg>
+)
+
+export const Map = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    {...props}
+  >
+    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+    <line x1="9" x2="9" y1="3" y2="18" />
+    <line x1="15" x2="15" y1="6" y2="21" />
+  </svg>
+)
+
+export const BarChart = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    {...props}
+  >
+    <line x1="12" x2="12" y1="20" y2="10" />
+    <line x1="18" x2="18" y1="20" y2="4" />
+    <line x1="6" x2="6" y1="20" y2="16" />
+  </svg>
+)
+
+
+export const Search = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    {...props}
+  >
+    <circle cx="11" cy="11" r="8" />
+    <path d="m21 21-4.3-4.3" />
+  </svg>
+)
+
+export const Layers = ({ className = "", ...props }: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    {...props}
+  >
+    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </svg>
+)

@@ -17,18 +17,20 @@ export function Navigation() {
 
   const services = [
     { name: "All Services", href: "/services" },
-    { name: "Minerals Trading", href: "/services/commodities-trading" },
-    { name: "Strategic Consultancy", href: "/services/consultancy" },
-    { name: "Trade Facilitation & Finance", href: "/services/trade-finance" },
-    { name: "Logistics & Supply Chain", href: "/services/logistics" },
-    { name: "Risk Management & Insurance", href: "/services/insurance" },
-    { name: "Investment Advisory", href: "/services/wealth-management" },
-    { name: "Crypto Desk & Digital Payments", href: "/services/crypto-desk" },
-    { name: "Regulatory Compliance & Legal Advisory", href: "/services/compliance" },
+    { name: "Fund Management", href: "/services/fund-management" },
+    { name: "Project Management", href: "/services/project-management" },
+    { name: "Strategic Planning", href: "/services/strategic-planning" },
+    { name: "Investment Advisory", href: "/services/investment-advisory" },
   ]
 
-  const additionalItems = [
-    { name: "SKR & Tracking", href: "/skr-tracking" },
+  const industries = [
+    { name: "Finance", href: "/industries/finance" },
+    { name: "Energy", href: "/industries/energy" },
+    { name: "Insurance", href: "/industries/insurance" },
+    { name: "Agriculture", href: "/industries/agriculture" },
+    { name: "Commercial Infrastructure", href: "/industries/infrastructure" },
+    { name: "ICT", href: "/industries/ict" },
+    { name: "Greenfield Projects", href: "/industries/greenfield" },
   ]
 
   return (
@@ -39,12 +41,12 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-3">
             <Image 
               src="/logo.png" 
-              alt="Adams Minerals and Consultancy" 
+              alt="Afri-Rise" 
               width={48} 
               height={48}
               className="object-contain"
             />
-            <div className="hidden sm:block text-sm font-medium text-foreground">Adams Minerals and Consultancy</div>
+            <div className="hidden sm:block text-sm font-medium text-foreground">Afri-Rise</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -75,15 +77,21 @@ export function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {additionalItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {/* Industries Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+                Industries <ChevronDown size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {industries.map((industry) => (
+                  <DropdownMenuItem key={industry.name} asChild>
+                    <Link href={industry.href} className="cursor-pointer">
+                      {industry.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* CTA Button */}
@@ -127,14 +135,15 @@ export function Navigation() {
               </Link>
             ))}
 
-            {additionalItems.map((item) => (
+            <div className="px-3 py-2 text-base font-semibold text-foreground mt-4">Industries</div>
+            {industries.map((industry) => (
               <Link
-                key={item.name}
-                href={item.href}
-                className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
+                key={industry.name}
+                href={industry.href}
+                className="block px-6 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {item.name}
+                {industry.name}
               </Link>
             ))}
             <div className="pt-2">

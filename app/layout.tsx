@@ -12,9 +12,9 @@ import { Suspense } from "react"
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
+  title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
   description:
-    "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
+    "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact. Part of Ronami Group of Companies.",
   generator: "v0.app",
   robots: {
     index: true,
@@ -28,17 +28,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
+    title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
     description:
-      "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
-    url: "https://adamsmineralsconsultancy.com",
-    siteName: "Adams Minerals and Consultancy",
+      "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact.",
+    url: "https://afri-rise.com",
+    siteName: "Afri-Rise",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Adams Minerals and Consultancy - Excellence in Minerals and Strategic Consultancy",
+        alt: "Afri-Rise - The African Fund, For African Companies",
       },
     ],
     locale: "en_US",
@@ -46,33 +46,37 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
+    title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
     description:
-      "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
+      "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact.",
     images: ["/og-image.png"],
   },
   keywords: [
-    "minerals trading",
-    "strategic consultancy",
-    "mineral resources",
-    "business consultancy",
-    "trade facilitation",
-    "mining consultancy",
-    "Adams Minerals",
-    "AMC",
-    "mineral expertise",
-    "consultancy services",
+    "fund management",
+    "project management",
+    "strategic planning",
+    "investment advisory",
+    "African fund",
+    "African companies",
+    "private sector financing",
+    "Afri-Rise",
+    "Ronami Group",
+    "African business",
+    "affordable financing",
+    "social impact projects",
+    "Kenya investment",
+    "Dubai investment",
   ],
-  authors: [{ name: "Adams Minerals and Consultancy Limited" }],
-  creator: "Adams Minerals and Consultancy Limited",
-  publisher: "Adams Minerals and Consultancy Limited",
+  authors: [{ name: "Afri-Rise Equity Limited" }],
+  creator: "Afri-Rise Equity Limited",
+  publisher: "Afri-Rise Equity Limited",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   alternates: {
-    canonical: "https://www.adamsmineralsconsultancy.com",
+    canonical: "https://www.afri-rise.com",
   },
   verification: {
     google: "your-google-verification-code",
@@ -89,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="/video/amcloop.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/images/afri-rise/african-business-meeting-1.jpg" as="image" />
       </head>
       <body className="font-sans">
         <OrganizationSchema />

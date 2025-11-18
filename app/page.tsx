@@ -12,88 +12,55 @@ import { SecurityHighlightsSection } from "@/components/security-highlights-sect
 export default function HomePage() {
   const services = [
     {
-      image: "/service-commodities-trading.jpg",
-      title: "Minerals Trading",
-      description: "Expert trading in precious metals, industrial minerals, and rare earth elements with global market access.",
-      href: "/services/commodities-trading",
+      image: "/images/afri-rise/fund-management-1.jpg",
+      title: "Fund Management",
+      description: "Working with thousands of companies around the world to provide expert fund management solutions for African private sector projects.",
+      href: "/services/fund-management",
     },
     {
-      image: "/service-consultancy.jpg",
-      title: "Strategic Consultancy",
-      description: "Comprehensive business advisory services, market analysis, and strategic planning for mineral sector operations.",
-      href: "/services/consultancy",
+      image: "/images/afri-rise/project-management-africa-1.jpg",
+      title: "Project Management",
+      description: "Working with thousands of companies around the world to deliver comprehensive project management services for impactful African initiatives.",
+      href: "/services/project-management",
     },
     {
-      image: "/service-trade-finance.jpg",
-      title: "Trade Facilitation & Finance",
-      description: "End-to-end support for mineral trade transactions, documentation, and financial solutions.",
-      href: "/services/trade-finance",
+      image: "/images/afri-rise/strategic-planning-business-1.jpg",
+      title: "Strategic Planning",
+      description: "Working with thousands of companies around the world to develop strategic plans that drive sustainable growth and social impact.",
+      href: "/services/strategic-planning",
     },
     {
-      image: "/service-logistics.jpg",
-      title: "Logistics & Supply Chain",
-      description: "Secure transportation and supply chain management for mineral commodities and high-value assets.",
-      href: "/services/logistics",
-    },
-    {
-      image: "/service-insurance.jpg",
-      title: "Risk Management & Insurance",
-      description: "Comprehensive risk assessment and insurance solutions for mineral trading and operations.",
-      href: "/services/insurance",
-    },
-    {
-      image: "/service-wealth-management.jpg",
+      image: "/images/afri-rise/investment-advisory-1.jpg",
       title: "Investment Advisory",
-      description: "Strategic investment guidance and wealth management services for mineral sector investments.",
-      href: "/services/wealth-management",
-    },
-    {
-      image: "/service-crypto-desk.jpg",
-      title: "Crypto Desk & Digital Payments",
-      description: "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations.",
-      href: "/services/crypto-desk",
-    },
-    {
-      image: "/service-compliance.jpg",
-      title: "Regulatory Compliance & Legal Advisory",
-      description: "Expert guidance on mining regulations, trade compliance, and legal advisory for mineral sector operations.",
-      href: "/services/compliance",
+      description: "Working with thousands of companies around the world to provide expert investment advisory services for African business opportunities.",
+      href: "/services/investment-advisory",
     },
   ]
 
   const stats = [
-    { value: "15+", label: "Years Experience" },
-    { value: "50+", label: "Countries Served" },
-    { value: "$500M+", label: "Trade Volume" },
-    { value: "1000+", label: "Successful Transactions" },
+    { value: "30+", label: "Years Combined Experience" },
+    { value: "7", label: "Industry Sectors" },
+    { value: "1000+", label: "Companies Served" },
+    { value: "2", label: "Office Locations" },
   ]
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-          poster="/global-trade-shipping-containers-port-aerial-view.jpg"
-        >
-          <source src="/video/amcloop.mp4" type="video/mp4" />
-          {/* Fallback for browsers that don't support video */}
-          Your browser does not support the video tag.
-        </video>
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center opacity-30"
+          style={{ backgroundImage: 'url(/images/afri-rise/african-business-meeting-1.jpg)' }}
+        />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
-            Excellence in Minerals
+            Afri-Rise Equity Limited
             <br />
-            and Strategic Consultancy
+            The African Fund, For African Companies
           </h1>
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
-            Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, 
-            trade facilitation, and business consultancy solutions.
+            A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for 
+            Private Sector African Projects that have a communal social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
@@ -132,16 +99,16 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">
-                Your Strategic Partner in Global Trade
+                The African Fund, For African Companies
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Adams Minerals and Consultancy is a specialized minerals trading and strategic consultancy firm 
-                headquartered in Entebbe, Uganda.
+                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in getting 
+                affordable financing for Private Sector African Projects that have a communal social impact.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, 
-                Asia, Europe, and the Americas through our specialized knowledge in mineral resources, market analysis, 
-                and comprehensive business advisory services.
+                With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies, 
+                specializing in Business Development across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                ICT, and Greenfield sectors.
               </p>
               <Button asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
                 <Link href="/about">
@@ -209,42 +176,42 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Why Choose Adams Minerals and Consultancy</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Why Choose Afri-Rise</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Specialized Minerals Expertise</h3>
+                <h3 className="text-2xl font-semibold mb-4">African Focus</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Deep knowledge in mineral markets, trading strategies, and resource evaluation delivered through 
-                  comprehensive consultancy services.
+                  Dedicated to assisting African businesses with affordable financing for private sector projects 
+                  that create communal social impact across the continent.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Strategic Business Advisory</h3>
+                <h3 className="text-2xl font-semibold mb-4">Ronami Group Partnership</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Expert guidance in business strategy, market analysis, and operational optimization for mineral 
-                  sector companies.
+                  Part of Ronami Group of Companies with established collaborations with Kenya Investment Authority, 
+                  Kenya National Chamber of Commerce, and Kenya Private Sector Alliance.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Global Market Access</h3>
+                <h3 className="text-2xl font-semibold mb-4">Three Decades of Experience</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  International network and partnerships across key mineral markets in Africa, Middle East, Asia, 
-                  Europe, and the Americas.
+                  Over 30 years of combined management experience in fund management, project management, strategic 
+                  planning, and investment advisory services.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Regulatory Compliance Excellence</h3>
+                <h3 className="text-2xl font-semibold mb-4">Multi-Sector Expertise</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Full compliance with mining regulations, trade standards, and international mineral trading 
-                  requirements.
+                  Specialized knowledge across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                  ICT, and Greenfield project sectors.
                 </p>
               </CardContent>
             </Card>
@@ -259,10 +226,10 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">Ready to Secure Your Next Transaction?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">Ready to Fund Your African Project?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 text-pretty leading-relaxed">
-            Partner with Adams Minerals and Consultancy for expert minerals trading and strategic consultancy services 
-            tailored to your needs.
+            Partner with Afri-Rise for affordable financing solutions and expert consultancy services for your 
+            Private Sector African Projects with social impact.
           </p>
           <Button size="lg" asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
             <Link href="/contact">

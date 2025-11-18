@@ -88,45 +88,35 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Headquarters",
-      details: ["Broadway, National Road, Entebbe, Uganda", "East Africa Hub"],
+      details: ["WU YI Plaza, Galana Road, Kilimani", "Nairobi, Kenya"],
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+256784850601", "Mon-Fri: 8:00 AM - 6:00 PM EAT"],
+      details: ["+1 917-730-2179", "Available during business hours"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@g1groupofcompanies.com", "support@g1groupofcompanies.com"],
+      details: ["info@afri-rise.com", "We respond within 24 hours"],
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 1:00 PM"],
+      details: ["Monday - Friday: 9:00 AM - 6:00 PM EAT", "Saturday: By appointment"],
     },
   ]
 
   const offices = [
     {
       region: "East Africa",
-      location: "Entebbe, Uganda",
+      location: "Nairobi, Kenya",
       description: "Headquarters & Regional Hub",
     },
     {
       region: "Middle East",
       location: "Dubai, UAE",
-      description: "Regional Office",
-    },
-    {
-      region: "West Africa",
-      location: "Lagos, Nigeria",
-      description: "Regional Office",
-    },
-    {
-      region: "Southern Africa",
-      location: "Johannesburg, South Africa",
-      description: "Regional Office",
+      description: "DWC Business Center, Level 4, Building A2",
     },
   ]
 
@@ -136,9 +126,9 @@ export default function ContactPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Contact Us</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Contact Afri-Rise</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Get in touch with our team to discuss how we can facilitate your next high-value transaction.
+              Get in touch with our fund management and consultancy experts to discuss your African business project.
             </p>
           </div>
         </div>
@@ -263,13 +253,17 @@ export default function ContactPage() {
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="trade-finance">Trade Finance & Capital Solutions</SelectItem>
-                          <SelectItem value="commodities">Commodities Trading & Brokerage</SelectItem>
-                          <SelectItem value="logistics">Logistics & Supply Chain</SelectItem>
-                          <SelectItem value="insurance">Insurance & Risk Advisory</SelectItem>
-                          <SelectItem value="consultancy">Business Consultancy</SelectItem>
-                          <SelectItem value="wealth">Investment & Wealth Management</SelectItem>
-                          <SelectItem value="energy">Renewable Energy & Solar</SelectItem>
+                          <SelectItem value="fund-management">Fund Management</SelectItem>
+                          <SelectItem value="project-management">Project Management</SelectItem>
+                          <SelectItem value="strategic-planning">Strategic Planning</SelectItem>
+                          <SelectItem value="investment-advisory">Investment Advisory</SelectItem>
+                          <SelectItem value="finance">Finance Sector</SelectItem>
+                          <SelectItem value="energy">Energy Sector</SelectItem>
+                          <SelectItem value="agriculture">Agriculture Sector</SelectItem>
+                          <SelectItem value="infrastructure">Infrastructure Sector</SelectItem>
+                          <SelectItem value="ict">ICT Sector</SelectItem>
+                          <SelectItem value="insurance">Insurance Sector</SelectItem>
+                          <SelectItem value="greenfield">Greenfield Projects</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
@@ -283,7 +277,7 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         className="mt-2"
-                        placeholder="Tell us about your requirements..."
+                        placeholder="Tell us about your African business project, funding needs, or consultancy requirements..."
                       />
                     </div>
                     <Button type="submit" size="lg" className="w-full btn-hover-lift" disabled={isLoading}>
@@ -330,7 +324,7 @@ export default function ContactPage() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Offices</h2>
             <p className="text-lg text-muted-foreground">Regional presence across key markets</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {offices.map((office, index) => (
               <Card key={index} className="card-hover">
                 <CardContent className="p-6 text-center">
@@ -344,17 +338,17 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Emergency Contact */}
+      {/* Call to Action */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-accent text-accent-foreground">
             <CardContent className="p-8 text-center">
-              <h2 className="text-2xl font-bold mb-4">24/7 Emergency Support</h2>
+              <h2 className="text-2xl font-bold mb-4">Ready to Fund Your African Project?</h2>
               <p className="text-lg mb-4">
-                For urgent matters related to active shipments or time-sensitive transactions:
+                Contact Afri-Rise today for expert fund management and consultancy services for your African business.
               </p>
-              <p className="text-xl font-semibold">+256784850601</p>
-              <p className="text-lg mt-2">24/7 Emergency Support Available</p>
+              <p className="text-xl font-semibold">+1 917-730-2179</p>
+              <p className="text-lg mt-2">info@afri-rise.com</p>
             </CardContent>
           </Card>
         </div>

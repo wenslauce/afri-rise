@@ -5,24 +5,24 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "G1 Group transformed our trade operations with their integrated approach. Their expertise in high-value transactions is unmatched.",
-      author: "Ahmed Hassan",
-      company: "Global Commodities Ltd",
-      role: "CEO",
+        "Afri-Rise helped us secure affordable financing for our renewable energy project in Kenya. Their understanding of the local market and social impact focus made all the difference.",
+      author: "Amina Odhiambo",
+      company: "Green Energy Solutions Kenya",
+      role: "Founder & CEO",
     },
     {
       quote:
-        "The security and compliance standards they maintain give us complete peace of mind. Highly professional and reliable partners.",
-      author: "Maria Santos",
-      company: "International Trade Finance",
-      role: "Director of Operations",
-    },
-    {
-      quote:
-        "Their 24/7 support and real-time tracking capabilities have significantly improved our transaction efficiency across borders.",
-      author: "David Chen",
-      company: "Asia Pacific Logistics",
+        "The strategic planning and project management support from Afri-Rise transformed our agricultural business. They truly understand African markets and sustainable development.",
+      author: "Joseph Mwangi",
+      company: "East Africa Agribusiness Ltd",
       role: "Managing Director",
+    },
+    {
+      quote:
+        "As part of Ronami Group, Afri-Rise brings decades of experience and strong partnerships. Their investment advisory services helped us expand across three African countries.",
+      author: "Fatima Al-Rashid",
+      company: "Pan-African Infrastructure Fund",
+      role: "Investment Director",
     },
   ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">What Our Clients Say</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Success Stories from African Businesses</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Trusted by leading companies worldwide for secure and efficient trade facilitation
+            Empowering businesses across Africa with affordable financing and expert consultancy
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">

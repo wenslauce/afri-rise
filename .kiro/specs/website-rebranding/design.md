@@ -1,10 +1,10 @@
-# Design Document - Website Rebranding
+# Design Document - Website Rebranding to Afri-Rise
 
 ## Overview
 
-This design document outlines the systematic approach to rebrand the existing Next.js website from "G1 Group of Companies" to "Adams Minerals and Consultancy". The rebranding will maintain the existing technical architecture, user experience, and 90% of the content while updating all company references, branding elements, and domain-specific information.
+This design document outlines the systematic approach to rebrand the existing Next.js website from "Adams Minerals and Consultancy" to "Afri-Rise Equity Limited" (Afri-Rise). The rebranding will transform the site from a minerals and consultancy focus to a fund management consultancy firm specializing in African private sector projects. The technical architecture and user experience will be maintained while updating all company references, service offerings, and content to reflect Afri-Rise's mission: "The African Fund, For African Companies".
 
-The website is built using Next.js 15 with TypeScript, Tailwind CSS, Radix UI components, and Supabase integration. The rebranding will be implemented through targeted text replacements, asset updates, and configuration changes without altering the core functionality.
+The website is built using Next.js 15 with TypeScript, Tailwind CSS, Radix UI components, and Supabase integration. The rebranding will be implemented through targeted text replacements, content restructuring, asset updates, and configuration changes without altering the core functionality.
 
 ## Architecture
 
@@ -32,26 +32,59 @@ The rebranding will follow a systematic replacement strategy across multiple lay
 ### 1. Brand Identity Components
 
 #### Company Name Mapping
-- **From**: "G1 Group of Companies"
-- **To**: "Adams Minerals and Consultancy"
-- **Legal Entity From**: "AMCs & Security Limited"
-- **Legal Entity To**: "Adams Minerals and Consultancy Limited" (to be confirmed)
+- **From**: "Adams Minerals and Consultancy"
+- **To**: "Afri-Rise Equity Limited" (short form: "Afri-Rise")
+- **Tagline**: "The African Fund, For African Companies"
+- **Parent Company**: Ronami Group of Companies (Ronami Holdings Ltd)
 
 #### Domain and Email Mapping
-- **Domain From**: g1groupofcompanies.com
-- **Domain To**: adamsmineralsconsultancy.com
-- **Email From**: info@g1groupofcompanies.com
-- **Email To**: info@adamsmineralsconsultancy.com
-- **Abbreviation**: AMC
+- **Domain From**: adamsmineralsconsultancy.com
+- **Domain To**: afri-rise.com
+- **Email From**: info@adamsmineralsconsultancy.com
+- **Email To**: info@afri-rise.com
+- **Phone**: +1 917-730-2179
 
-### 2. File Categories Requiring Updates
+#### Office Locations
+- **Nairobi Office**: P.O.BOX 47942 NAIROBI, KENYA • WU YI PLAZA GALANA ROAD KILIMANI • SUITE B 6TH FLOOR ROOM 12
+- **Dubai Office**: DWC BUSINESS CENTER LEVEL 4 BUILDING A2 DUBAI SOUTH BUSINESS PARK
+
+### 2. Service Offering Transformation
+
+#### Previous Services (Adams Minerals and Consultancy)
+- Commodities Trading
+- Logistics Solutions
+- Trade Finance
+- Compliance & Risk Management
+- Consultancy Services
+- Insurance Solutions
+- Wealth Management
+- Crypto Desk
+
+#### New Services (Afri-Rise)
+1. **Fund Management** - Working with thousands of companies around the world
+2. **Project Management** - Working with thousands of companies around the world
+3. **Strategic Planning** - Working with thousands of companies around the world
+4. **Investment Advisory** - Working with thousands of companies around the world
+
+#### Industry Focus Areas
+- Finance
+- Energy
+- Insurance
+- Agriculture
+- Commercial Infrastructure
+- ICT (Information and Communication Technology)
+- Greenfield Projects
+
+### 3. File Categories Requiring Updates
 
 #### React Components
-- `app/layout.tsx` - Metadata, titles, Open Graph data
+- `app/layout.tsx` - Metadata, titles, Open Graph data, company description
 - `components/navigation.tsx` - Logo alt text, company name display
-- `components/footer.tsx` - Company name, contact information
-- `app/page.tsx` - Hero section company description
-- `app/about/page.tsx` - Company overview and history
+- `components/footer.tsx` - Company name, contact information, office addresses
+- `app/page.tsx` - Hero section company description and tagline
+- `app/about/page.tsx` - Complete rewrite with Afri-Rise mission, Ronami Group connection
+- `app/services/page.tsx` - Replace all service offerings with four core services
+- Service detail pages - Update to reflect new service offerings
 
 #### Email Templates
 - `lib/email-templates/contact-form.tsx` - Company branding in emails
@@ -71,17 +104,27 @@ The rebranding will follow a systematic replacement strategy across multiple lay
 - `app/privacy/page.tsx` - Privacy policy with contact information
 - `app/news/page.tsx` - Newsletter subscription references
 
-### 3. Asset Management Strategy
+#### Image Generation Script
+- `scripts/download-pexels-images.js` - Create/update script to download relevant images using Pexels API
+
+### 4. Asset Management Strategy
 
 #### Logo and Branding Assets
-- Replace `/public/logo.png` with Adams Minerals and Consultancy logo
+- Replace `/public/logo.png` with Afri-Rise logo
 - Update `/public/og-image.png` for social media sharing
 - Create new favicon files if needed
 - Update any branded images in the public directory
 
-#### Content Assets
-- Review and update any company-specific images
-- Ensure all visual assets align with new brand identity
+#### Content Assets via Pexels API
+- Create automated script to download relevant images using Pexels API key: `9jaGUuh9gt15nKMgNMdA1ReUPj5mJmMkqnnRBaowq9kq7qjUYhPV9yR1`
+- Target image categories:
+  - African business and finance
+  - Fund management and investment
+  - Project management
+  - Strategic planning and consultancy
+  - Industry-specific: energy, agriculture, infrastructure, ICT
+  - Office and corporate settings in African context
+- Ensure all visual assets align with Afri-Rise's African focus
 - Maintain existing image optimization and responsive behavior
 
 ## Data Models
@@ -90,51 +133,127 @@ The rebranding will follow a systematic replacement strategy across multiple lay
 ```typescript
 interface BrandConfig {
   companyName: string;
+  companyShortName: string;
   legalName: string;
   domain: string;
   primaryEmail: string;
-  supportEmail: string;
-  salesEmail: string;
+  phone: string;
   tagline: string;
   description: string;
+  parentCompany: string;
 }
 
 // Current Configuration
 const currentBrand: BrandConfig = {
-  companyName: "G1 Group of Companies",
-  legalName: "AMCs & Security Limited",
-  domain: "g1groupofcompanies.com",
-  primaryEmail: "info@g1groupofcompanies.com",
-  supportEmail: "support@g1groupofcompanies.com",
-  salesEmail: "sales@g1groupofcompanies.com",
-  tagline: "Securing High-Value Trade Across Borders",
-  description: "End-to-end protection, movement, and facilitation for high-value assets..."
+  companyName: "Adams Minerals and Consultancy",
+  companyShortName: "AMC",
+  legalName: "Adams Minerals and Consultancy Limited",
+  domain: "adamsmineralsconsultancy.com",
+  primaryEmail: "info@adamsmineralsconsultancy.com",
+  phone: "",
+  tagline: "Excellence in Minerals and Strategic Consultancy",
+  description: "Comprehensive minerals trading and strategic consultancy services...",
+  parentCompany: ""
 }
 
 // Target Configuration
 const newBrand: BrandConfig = {
-  companyName: "Adams Minerals and Consultancy",
-  legalName: "Adams Minerals and Consultancy Limited",
-  domain: "adamsmineralsconsultancy.com",
-  primaryEmail: "info@adamsmineralsconsultancy.com",
-  supportEmail: "support@adamsmineralsconsultancy.com",
-  salesEmail: "sales@adamsmineralsconsultancy.com",
-  tagline: "Excellence in Minerals and Strategic Consultancy",
-  description: "Comprehensive minerals trading and strategic consultancy services..."
+  companyName: "Afri-Rise Equity Limited",
+  companyShortName: "Afri-Rise",
+  legalName: "Afri-Rise Equity Limited",
+  domain: "afri-rise.com",
+  primaryEmail: "info@afri-rise.com",
+  phone: "+1 917-730-2179",
+  tagline: "The African Fund, For African Companies",
+  description: "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact.",
+  parentCompany: "Ronami Group of Companies (Ronami Holdings Ltd)"
 }
 ```
 
-### 2. Contact Information Model
+### 2. Service Model
 ```typescript
-interface ContactInfo {
-  phone: string[];
-  emergencyHotline: string;
-  address: string;
-  city: string;
-  country: string;
+interface Service {
+  name: string;
+  description: string;
+  icon?: string;
 }
 
-// This may need updates based on Adams Minerals and Consultancy's actual contact details
+// New Services
+const afriRiseServices: Service[] = [
+  {
+    name: "Fund Management",
+    description: "Working with thousands of companies around the world"
+  },
+  {
+    name: "Project Management",
+    description: "Working with thousands of companies around the world"
+  },
+  {
+    name: "Strategic Planning",
+    description: "Working with thousands of companies around the world"
+  },
+  {
+    name: "Investment Advisory",
+    description: "Working with thousands of companies around the world"
+  }
+];
+```
+
+### 3. Contact Information Model
+```typescript
+interface ContactInfo {
+  phone: string;
+  email: string;
+  offices: Office[];
+}
+
+interface Office {
+  location: string;
+  address: string;
+}
+
+const afriRiseContact: ContactInfo = {
+  phone: "+1 917-730-2179",
+  email: "info@afri-rise.com",
+  offices: [
+    {
+      location: "Nairobi, Kenya",
+      address: "P.O.BOX 47942 NAIROBI, KENYA • WU YI PLAZA GALANA ROAD KILIMANI • SUITE B 6TH FLOOR ROOM 12"
+    },
+    {
+      location: "Dubai, UAE",
+      address: "DWC BUSINESS CENTER LEVEL 4 BUILDING A2 DUBAI SOUTH BUSINESS PARK"
+    }
+  ]
+};
+```
+
+### 4. Pexels Image Download Script Model
+```typescript
+interface PexelsImageConfig {
+  apiKey: string;
+  searchQueries: string[];
+  outputDirectory: string;
+  imagesPerQuery: number;
+}
+
+const pexelsConfig: PexelsImageConfig = {
+  apiKey: "9jaGUuh9gt15nKMgNMdA1ReUPj5mJmMkqnnRBaowq9kq7qjUYhPV9yR1",
+  searchQueries: [
+    "african business meeting",
+    "fund management",
+    "investment advisory",
+    "project management africa",
+    "strategic planning",
+    "african finance",
+    "african energy sector",
+    "african agriculture",
+    "african infrastructure",
+    "african technology"
+  ],
+  outputDirectory: "public",
+  imagesPerQuery: 3
+};
 ```
 
 ## Error Handling
@@ -180,25 +299,34 @@ interface ContactInfo {
 
 ## Implementation Phases
 
-### Phase 1: Content and Text Updates
-- Replace all company name references in React components
-- Update metadata and SEO elements
-- Modify email templates and API routes
+### Phase 1: Pexels Image Generation Script
+- Create automated script to download relevant images from Pexels API
+- Configure search queries for African business, fund management, and industry-specific content
+- Save images to public directory with descriptive filenames
 
-### Phase 2: Asset and Configuration Updates
+### Phase 2: Content and Text Updates
+- Replace all company name references from Adams Minerals to Afri-Rise
+- Update metadata and SEO elements with new tagline
+- Modify email templates and API routes
+- Update service offerings to four core services
+- Rewrite about page with Afri-Rise mission and Ronami Group connection
+
+### Phase 3: Asset and Configuration Updates
 - Replace logo and branding assets
 - Update configuration files and environment variables
 - Modify sitemap and robots.txt
+- Update contact information with new phone and office addresses
 
-### Phase 3: Domain and Email Migration
-- Update domain references (when new domain is confirmed)
-- Configure email service with new addresses
+### Phase 4: Domain and Email Migration
+- Update domain references from adamsmineralsconsultancy.com to afri-rise.com
+- Configure email service with info@afri-rise.com
 - Update DNS and email authentication records
 
-### Phase 4: Testing and Validation
+### Phase 5: Testing and Validation
 - Comprehensive testing across all functionality
 - Content verification and link validation
 - Performance and SEO validation
+- Verify all service pages reflect new offerings
 
 ## Migration Considerations
 
@@ -216,5 +344,13 @@ interface ContactInfo {
 - Maintain existing navigation and user flows
 - Preserve all functional features and interactions
 - Ensure consistent visual hierarchy and design patterns
+- Update service pages to reflect new focus on fund management and consultancy
 
-This design provides a comprehensive framework for systematically rebranding the website while maintaining its technical integrity and user experience.
+### 4. Content Strategy
+- Emphasize African focus throughout the site
+- Highlight connection to Ronami Group of Companies
+- Showcase three decades of combined management experience
+- Feature industry expertise across seven sectors
+- Communicate mission of affordable financing for African projects with social impact
+
+This design provides a comprehensive framework for systematically rebranding the website from a minerals and consultancy focus to a fund management consultancy specializing in African private sector projects, while maintaining technical integrity and user experience.

@@ -8,10 +8,10 @@ interface OrganizationSchemaProps {
 }
 
 export function OrganizationSchema({
-  name = "Adams Minerals and Consultancy Limited",
-  url = "https://www.adamsmineralsconsultancy.com",
-  logo = "https://www.adamsmineralsconsultancy.com/logo.png",
-  description = "Specialized minerals trading and strategic consultancy firm headquartered in Entebbe, Uganda, providing expert services across Africa, Middle East, Asia, Europe, and the Americas.",
+  name = "Afri-Rise Equity Limited",
+  url = "https://www.afri-rise.com",
+  logo = "https://www.afri-rise.com/logo.png",
+  description = "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact. Part of Ronami Group of Companies.",
 }: OrganizationSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -22,30 +22,30 @@ export function OrganizationSchema({
     description,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Broadway, National Road",
-      addressLocality: "Entebbe",
-      addressCountry: "UG",
+      streetAddress: "WU YI Plaza, Galana Road, Kilimani",
+      addressLocality: "Nairobi",
+      addressCountry: "KE",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+256784850601",
+      telephone: "+1 917-730-2179",
       contactType: "customer service",
-      email: "info@adamsmineralsconsultancy.com",
+      email: "info@afri-rise.com",
       availableLanguage: ["English"],
-      areaServed: ["Worldwide"],
+      areaServed: ["Africa", "Middle East"],
     },
     sameAs: [
-      "https://www.linkedin.com/company/adams-minerals-consultancy",
-      "https://twitter.com/adamsminerals",
+      "https://www.linkedin.com/company/afri-rise",
+      "https://twitter.com/afririse",
     ],
-    foundingDate: "2010",
+    foundingDate: "2013",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
-      value: "50-100",
+      value: "20-50",
     },
     areaServed: {
       "@type": "Place",
-      name: "Worldwide",
+      name: "Africa",
     },
   }
 
@@ -82,19 +82,19 @@ export function ServiceSchema({
     url,
     provider: {
       "@type": "Organization",
-      name: "Adams Minerals and Consultancy Limited",
-      url: "https://www.adamsmineralsconsultancy.com",
+      name: "Afri-Rise Equity Limited",
+      url: "https://www.afri-rise.com",
     },
     areaServed,
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: url,
-      servicePhone: "+256784850601",
+      servicePhone: "+1 917-730-2179",
       servicePostalAddress: {
         "@type": "PostalAddress",
-        streetAddress: "Broadway, National Road",
-        addressLocality: "Entebbe",
-        addressCountry: "UG",
+        streetAddress: "WU YI Plaza, Galana Road, Kilimani",
+        addressLocality: "Nairobi",
+        addressCountry: "KE",
       },
     },
   }
@@ -145,9 +145,9 @@ interface WebsiteSchemaProps {
 }
 
 export function WebsiteSchema({
-  url = "https://www.adamsmineralsconsultancy.com",
-  name = "Adams Minerals and Consultancy",
-  description = "Excellence in Minerals Trading and Strategic Consultancy",
+  url = "https://www.afri-rise.com",
+  name = "Afri-Rise",
+  description = "The African Fund, For African Companies",
 }: WebsiteSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -157,7 +157,7 @@ export function WebsiteSchema({
     description,
     publisher: {
       "@type": "Organization",
-      name: "Adams Minerals and Consultancy Limited",
+      name: "Afri-Rise Equity Limited",
     },
     potentialAction: {
       "@type": "SearchAction",
@@ -192,8 +192,8 @@ export function ArticleSchema({
   description,
   datePublished,
   dateModified,
-  image = "https://www.adamsmineralsconsultancy.com/og-image.png",
-  author = "Adams Minerals and Consultancy Limited",
+  image = "https://www.afri-rise.com/og-image.png",
+  author = "Afri-Rise Equity Limited",
 }: ArticleSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -209,10 +209,10 @@ export function ArticleSchema({
     },
     publisher: {
       "@type": "Organization",
-      name: "Adams Minerals and Consultancy Limited",
+      name: "Afri-Rise Equity Limited",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.adamsmineralsconsultancy.com/logo.png",
+        url: "https://www.afri-rise.com/logo.png",
       },
     },
   }

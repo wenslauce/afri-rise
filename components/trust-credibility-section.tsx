@@ -5,23 +5,23 @@ export function TrustCredibilitySection() {
   const credentials = [
     {
       icon: Award,
-      title: "ISO Certified",
-      description: "International standards compliance for quality and security operations",
+      title: "30+ Years Experience",
+      description: "Over three decades of combined management experience in fund management and consultancy",
     },
     {
       icon: Shield,
-      title: "Regulatory Compliance",
-      description: "Full AML, KYC, PSRA, and IRA regulatory alignment",
+      title: "Ronami Group Partnership",
+      description: "Part of Ronami Group of Companies with established collaborations across East Africa",
     },
     {
       icon: Handshake,
       title: "Strategic Partnerships",
-      description: "Trusted by leading financial institutions and trade organizations",
+      description: "Trusted partnerships with Kenya Investment Authority, Kenya National Chamber of Commerce, and Kenya Private Sector Alliance",
     },
     {
       icon: CheckCircle,
-      title: "Industry Recognition",
-      description: "Award-winning expertise in high-value trade facilitation",
+      title: "Social Impact Focus",
+      description: "Dedicated to financing African projects with communal social impact and sustainable development",
     },
   ]
 
@@ -29,9 +29,9 @@ export function TrustCredibilitySection() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Trusted by Global Leaders</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Trusted Across Africa</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Certified, compliant, and recognized for excellence in international trade
+            Empowering African businesses with affordable financing and expert consultancy services
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

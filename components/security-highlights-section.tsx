@@ -5,23 +5,23 @@ export function SecurityHighlightsSection() {
   const features = [
     {
       icon: Lock,
-      title: "SKR Tracking Technology",
-      description: "Real-time monitoring and verification of high-value consignments with blockchain-backed security",
+      title: "Transparent Operations",
+      description: "Clear, honest communication and ethical practices in all our fund management and consultancy services",
     },
     {
       icon: Database,
-      title: "Data Protection",
-      description: "Enterprise-grade encryption and secure data handling compliant with international standards",
+      title: "Multi-Sector Expertise",
+      description: "Specialized knowledge across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, ICT, and Greenfield projects",
     },
     {
       icon: Scale,
-      title: "Regulatory Compliance",
-      description: "Full adherence to AML, KYC, PSRA, IRA, and international trade regulations",
+      title: "Regulatory Excellence",
+      description: "Full compliance with Kenyan and East African business regulations, backed by Ronami Group's established partnerships",
     },
     {
       icon: AlertCircle,
-      title: "Risk Management",
-      description: "Comprehensive risk assessment and mitigation strategies for every transaction",
+      title: "Social Impact Assessment",
+      description: "Every project evaluated for communal social impact and sustainable development potential",
     },
   ]
 
@@ -29,9 +29,9 @@ export function SecurityHighlightsSection() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Security & Compliance First</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Our Commitment to Excellence</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Your assets and data are protected by industry-leading security measures and regulatory compliance
+            Professional integrity, expert guidance, and dedication to African business success
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

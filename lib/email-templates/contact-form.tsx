@@ -15,7 +15,7 @@ export function ContactFormEmail({ data }: { data: ContactFormData }): ReactElem
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
       <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>New Contact Form Submission</h1>
-        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Adams Minerals and Consultancy</p>
+        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Afri-Rise Equity Limited</p>
       </div>
       
       <div style={{ backgroundColor: '#f8fafc', padding: '30px', borderRadius: '0 0 8px 8px', border: '1px solid #e2e8f0' }}>
@@ -81,7 +81,7 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
       <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
-        <h1 style={{ margin: 0, fontSize: '24px' }}>Thank You for Contacting Adams Minerals and Consultancy</h1>
+        <h1 style={{ margin: 0, fontSize: '24px' }}>Thank You for Contacting Afri-Rise</h1>
         <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Your inquiry has been received</p>
       </div>
       
@@ -91,7 +91,7 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
         </p>
         
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>
-          Thank you for reaching out to Adams Minerals and Consultancy. We have received your inquiry regarding <strong>{data.service}</strong> and our team will review your requirements.
+          Thank you for reaching out to Afri-Rise. We have received your inquiry regarding <strong>{data.service}</strong> and our team will review your requirements.
         </p>
 
         <div style={{ 
@@ -111,7 +111,7 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
         </div>
 
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>
-          Our mineral and consultancy experts will contact you within <strong>24 hours</strong> to discuss your requirements and provide detailed information about our services.
+          Our fund management and consultancy experts will contact you within <strong>24 hours</strong> to discuss your requirements and provide detailed information about our services.
         </p>
 
         <div style={{ 
@@ -123,7 +123,7 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
         }}>
           <h3 style={{ color: '#166534', marginTop: 0 }}>What Happens Next?</h3>
           <ul style={{ color: '#166534', fontSize: '14px', lineHeight: '1.6' }}>
-            <li>Our mineral and consultancy specialists will review your requirements</li>
+            <li>Our fund management and consultancy specialists will review your requirements</li>
             <li>We'll prepare a customized proposal based on your needs</li>
             <li>A team member will contact you to discuss next steps</li>
           </ul>
@@ -137,17 +137,17 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
         }}>
           <h3 style={{ color: '#92400e', marginTop: 0 }}>Need Immediate Assistance?</h3>
           <p style={{ margin: '5px 0', fontSize: '14px', color: '#92400e' }}>
-            <strong>24/7 Emergency Hotline:</strong> +256784850601
+            <strong>Phone:</strong> +1 917-730-2179
           </p>
           <p style={{ margin: '5px 0', fontSize: '14px', color: '#92400e' }}>
-            <strong>Business Hours:</strong> +256784850601 (Mon-Fri: 8:00 AM - 6:00 PM EAT)
+            <strong>Email:</strong> info@afri-rise.com
           </p>
         </div>
 
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginTop: '30px' }}>
           Best regards,<br />
-          <strong>Adams Minerals and Consultancy</strong><br />
-          <em>Excellence in Minerals and Strategic Consultancy</em>
+          <strong>Afri-Rise</strong><br />
+          <em>The African Fund, For African Companies</em>
         </p>
       </div>
     </div>

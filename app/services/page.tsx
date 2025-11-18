@@ -6,124 +6,64 @@ import { TrendingUp, Globe, Shield, DollarSign, Truck, Briefcase, Zap, Scale, Ar
 export default function ServicesPage() {
   const services = [
     {
-      icon: Globe,
-      title: "Minerals Trading",
+      icon: DollarSign,
+      title: "Fund Management",
       description:
-        "Expert trading in precious metals, industrial minerals, and rare earth elements with global market access and deep sector expertise.",
+        "Working with thousands of companies around the world to provide expert fund management solutions for African private sector projects with communal social impact.",
       features: [
-        "Precious Metals Trading (Gold, Silver, Platinum)",
-        "Industrial Minerals & Rare Earth Elements",
-        "Global Market Access & Price Intelligence",
-        "Quality Assessment & Certification",
-        "Supply Chain Optimization",
-        "Market Analysis & Forecasting",
+        "Affordable Financing Solutions",
+        "Private Sector Project Funding",
+        "Social Impact Investment",
+        "Fund Structuring & Administration",
+        "Portfolio Management",
+        "Investor Relations",
       ],
-      href: "/services/commodities-trading",
+      href: "/services/fund-management",
     },
     {
       icon: Briefcase,
-      title: "Strategic Consultancy",
+      title: "Project Management",
       description:
-        "Comprehensive business advisory services, market analysis, and strategic planning for mineral sector operations and business growth.",
+        "Working with thousands of companies around the world to deliver comprehensive project management services for impactful African initiatives across multiple sectors.",
       features: [
-        "Market Analysis & Intelligence",
-        "Strategic Business Planning",
-        "Operational Optimization",
-        "Investment Advisory Services",
-        "Risk Assessment & Management",
-        "Performance Enhancement",
+        "Project Planning & Execution",
+        "Resource Allocation & Optimization",
+        "Timeline & Budget Management",
+        "Stakeholder Coordination",
+        "Risk Mitigation Strategies",
+        "Quality Assurance & Delivery",
       ],
-      href: "/services/consultancy",
-    },
-    {
-      icon: DollarSign,
-      title: "Trade Facilitation & Finance",
-      description:
-        "End-to-end support for mineral trade transactions, documentation, and comprehensive financial solutions for international trading.",
-      features: [
-        "Trade Documentation & Compliance",
-        "Letter of Credit Facilities",
-        "Export/Import Financing",
-        "Transaction Structuring",
-        "Payment Solutions",
-        "Cross-Border Trade Support",
-      ],
-      href: "/services/trade-finance",
-    },
-    {
-      icon: Truck,
-      title: "Logistics & Supply Chain",
-      description:
-        "Secure transportation and supply chain management for mineral commodities and high-value assets with end-to-end coordination.",
-      features: [
-        "Secure Transportation Services",
-        "Supply Chain Management",
-        "Customs & Documentation",
-        "Warehousing & Storage",
-        "Risk Management & Insurance",
-        "Real-time Tracking & Monitoring",
-      ],
-      href: "/services/logistics",
-    },
-    {
-      icon: Shield,
-      title: "Risk Management & Insurance",
-      description:
-        "Comprehensive risk assessment and insurance solutions for mineral trading operations, asset protection, and transaction security.",
-      features: [
-        "Trade Risk Assessment",
-        "Marine & Cargo Insurance",
-        "Political Risk Coverage",
-        "Asset Protection Services",
-        "Due Diligence & Compliance",
-        "Crisis Management Support",
-      ],
-      href: "/services/insurance",
+      href: "/services/project-management",
     },
     {
       icon: TrendingUp,
+      title: "Strategic Planning",
+      description:
+        "Working with thousands of companies around the world to develop strategic plans that drive sustainable growth and create lasting social impact across African markets.",
+      features: [
+        "Business Strategy Development",
+        "Market Entry Planning",
+        "Growth Strategy Formulation",
+        "Competitive Analysis",
+        "Organizational Development",
+        "Performance Metrics & KPIs",
+      ],
+      href: "/services/strategic-planning",
+    },
+    {
+      icon: Globe,
       title: "Investment Advisory",
       description:
-        "Strategic investment guidance and wealth management services specifically tailored for mineral sector investments and portfolio optimization.",
+        "Working with thousands of companies around the world to provide expert investment advisory services for African business opportunities and sustainable development projects.",
       features: [
-        "Mineral Sector Investment Analysis",
-        "Portfolio Diversification Strategies",
-        "Market Entry Advisory",
-        "Asset Valuation Services",
-        "Investment Risk Management",
-        "Wealth Preservation Planning",
+        "Investment Opportunity Analysis",
+        "Due Diligence Services",
+        "Financial Modeling & Valuation",
+        "Risk Assessment & Management",
+        "Portfolio Diversification",
+        "Exit Strategy Planning",
       ],
-      href: "/services/wealth-management",
-    },
-    {
-      icon: Zap,
-      title: "Crypto Desk & Digital Payments",
-      description:
-        "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations and cross-border settlements.",
-      features: [
-        "Cryptocurrency Trading & Exchange",
-        "Digital Payment Processing",
-        "Blockchain Transaction Security",
-        "Cross-Border Digital Settlements",
-        "Crypto Asset Management",
-        "Digital Wallet Solutions",
-      ],
-      href: "/services/crypto-desk",
-    },
-    {
-      icon: Scale,
-      title: "Regulatory Compliance & Legal Advisory",
-      description:
-        "Expert guidance on mining regulations, trade compliance, and comprehensive legal advisory services for mineral sector operations.",
-      features: [
-        "Mining Regulations & Compliance",
-        "International Trade Law",
-        "Contract Negotiation & Review",
-        "Regulatory Risk Assessment",
-        "Legal Documentation Services",
-        "Dispute Resolution Support",
-      ],
-      href: "/services/compliance",
+      href: "/services/investment-advisory",
     },
   ]
 
@@ -156,9 +96,10 @@ export default function ServicesPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Comprehensive Minerals & Consultancy Services</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Our Core Services</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Eight specialized service lines delivering excellence in minerals trading, strategic consultancy, and comprehensive business solutions across global markets.
+              Four specialized service lines delivering excellence in fund management, project management, strategic planning, 
+              and investment advisory for African private sector projects with social impact.
             </p>
           </div>
         </div>
@@ -213,7 +154,7 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Service Process</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A systematic approach ensuring excellence in minerals trading and consultancy service delivery from consultation to completion
+              A systematic approach ensuring excellence in fund management and consultancy service delivery from consultation to completion
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -234,83 +175,83 @@ export default function ServicesPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Who We Serve</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Industry Focus</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Serving diverse clients across the minerals and business sectors with specialized expertise
+              Serving African businesses across seven key industry sectors with specialized expertise
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle>Mining & Minerals</CardTitle>
+                <CardTitle>Finance & Energy</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Mining Companies & Operators</span>
+                    <span>Financial Services & Banking</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Mineral Traders & Brokers</span>
+                    <span>Renewable Energy Projects</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Precious Metals Dealers</span>
+                    <span>Power Generation & Distribution</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Industrial Mineral Suppliers</span>
+                    <span>Energy Infrastructure</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Business & Finance</CardTitle>
+                <CardTitle>Agriculture & Insurance</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>SMEs & Corporations</span>
+                    <span>Agribusiness & Food Security</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>High-Net-Worth Individuals</span>
+                    <span>Agricultural Technology</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Investment Firms</span>
+                    <span>Insurance Services</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Financial Institutions</span>
+                    <span>Risk Management Solutions</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>International Trade</CardTitle>
+                <CardTitle>Infrastructure & ICT</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Exporters & Importers</span>
+                    <span>Commercial Infrastructure</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Logistics Companies</span>
+                    <span>ICT & Telecommunications</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Government Agencies</span>
+                    <span>Greenfield Projects</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>International Organizations</span>
+                    <span>Digital Transformation</span>
                   </li>
                 </ul>
               </CardContent>
@@ -324,7 +265,8 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
-            Discover how Adams Minerals and Consultancy can support your mineral sector operations with our specialized expertise and comprehensive consultancy services.
+            Discover how Afri-Rise can support your African business with affordable financing solutions and expert 
+            consultancy services for projects with social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

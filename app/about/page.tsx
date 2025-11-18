@@ -7,8 +7,8 @@ export default function AboutPage() {
   const values = [
     {
       icon: Target,
-      title: "Precision & Expertise",
-      description: "Every mineral assessment and consultancy engagement handled with meticulous attention to detail and expert knowledge.",
+      title: "African Focus",
+      description: "Dedicated to empowering African businesses with affordable financing solutions for projects that create communal social impact.",
     },
     {
       icon: Eye,
@@ -17,13 +17,13 @@ export default function AboutPage() {
     },
     {
       icon: Award,
-      title: "Excellence & Innovation",
-      description: "Continuously advancing our mineral sector expertise to meet evolving market demands and client needs.",
+      title: "Three Decades of Experience",
+      description: "Over 30 years of combined management experience in fund management, project management, strategic planning, and investment advisory.",
     },
     {
       icon: Globe2,
-      title: "Global Markets, Local Knowledge",
-      description: "International mineral market access combined with deep understanding of regional mining regulations and practices.",
+      title: "Multi-Sector Expertise",
+      description: "Specialized knowledge across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, ICT, and Greenfield sectors.",
     },
   ]
 
@@ -33,10 +33,10 @@ export default function AboutPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">About Adams Minerals and Consultancy</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">About Afri-Rise</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Your specialized partner in minerals trading and strategic consultancy services, delivering excellence 
-              across global markets.
+              The African Fund, For African Companies - Empowering businesses with affordable financing for 
+              Private Sector African Projects that create communal social impact.
             </p>
           </div>
         </div>
@@ -50,25 +50,26 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy 
-                  firm headquartered in Entebbe, Uganda.
+                  Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in getting 
+                  affordable financing for Private Sector African Projects that have a communal social impact.
                 </p>
                 <p>
-                  We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, 
-                  Asia, Europe, and the Americas through our deep expertise in mineral resources, market analysis, 
-                  and comprehensive business advisory services.
+                  With over three decades of combined management experience, Afri-Rise specializes in Business Development 
+                  across a myriad of sectors including Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                  ICT, and Greenfield projects.
                 </p>
                 <p>
-                  Our mandate is to deliver excellence in minerals trading, resource assessment, and strategic business 
-                  consultancy. From mineral market analysis and trade facilitation to resource evaluation, business 
-                  advisory, strategic planning, and operational optimization for companies in the mineral sector.
+                  Afri-Rise is part of Ronami Group of Companies (Ronami Holdings Ltd), established in 2013. Ronami International 
+                  collaborates closely with international private companies and organizations, assisting them in adapting their 
+                  business models to the local business environment and developing effective business strategies tailored for 
+                  the Kenyan and East African market.
                 </p>
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img
-                src="/modern-office-building-corporate-headquarters.jpg"
-                alt="Adams Minerals and Consultancy Headquarters"
+                src="/images/afri-rise/nairobi-business-1.jpg"
+                alt="Afri-Rise Headquarters in Nairobi"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -80,46 +81,46 @@ export default function AboutPage() {
       <section className="py-20 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">What Sets Us Apart</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ronami Group of Companies</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Unlike traditional service providers, Adams Minerals and Consultancy operates as a strategic partner 
-              with deep mineral sector expertise
+              Afri-Rise is proud to be part of Ronami International, a consultancy and supply of goods and services 
+              company with a strong track record
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Specialized Minerals Expertise</h3>
+                <h3 className="text-2xl font-semibold mb-4">Established Partnerships</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Deep knowledge in mineral markets, resource evaluation, and trading strategies, providing clients 
-                  with expert guidance and comprehensive consultancy services in the mineral sector.
+                  Ronami International has fostered collaborations with key Kenyan organizations including Kenya Investment 
+                  Authority, Kenya National Chamber of Commerce, and Kenya Private Sector Alliance.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Comprehensive Consultancy</h3>
+                <h3 className="text-2xl font-semibold mb-4">Global Network</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Complete strategic advisory services from market analysis to business planning, ensuring optimal 
-                  decision-making across all phases of mineral sector operations.
+                  Established MOUs and joint ventures with companies from Northern Europe, North and South America, 
+                  the Caribbean, and other East African companies and governments.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Market Intelligence</h3>
+                <h3 className="text-2xl font-semibold mb-4">Comprehensive Services</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Advanced market analysis, price forecasting, and trend identification for precious metals, industrial 
-                  minerals, and rare earth elements across global markets.
+                  Ronami offers Project Management, Market Research, Partner Search, Business Planning, Event Planning, 
+                  Training Workshops, Culture Seminars, and Security Advisory Services.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Regulatory Excellence</h3>
+                <h3 className="text-2xl font-semibold mb-4">Local Market Expertise</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Full compliance with mining regulations, trade standards, and international mineral trading requirements. 
-                  Every engagement handled with strict professional standards and verified documentation.
+                  Deep understanding of local business culture and practices, helping international companies successfully 
+                  operate in the Kenyan and East African market.
                 </p>
               </CardContent>
             </Card>
@@ -147,46 +148,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Global Presence */}
+      {/* Office Locations */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Global Presence</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Offices</h2>
             <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-              Active partnerships and operations across multiple continents
+              Strategically located to serve African businesses and international partners
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="bg-primary-foreground/10 border-primary-foreground/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-foreground">Africa</h3>
-                <p className="text-primary-foreground/80 text-sm">
-                  Kenya (HQ), East & Central Africa, COMESA, EAC, South Africa, West Africa
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-primary-foreground">Nairobi, Kenya</h3>
+                <p className="text-primary-foreground/80 leading-relaxed">
+                  P.O.BOX 47942 NAIROBI, KENYA<br />
+                  WU YI PLAZA GALANA ROAD KILIMANI<br />
+                  SUITE B 6TH FLOOR ROOM 12
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-primary-foreground/10 border-primary-foreground/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-foreground">Middle East</h3>
-                <p className="text-primary-foreground/80 text-sm">UAE, Saudi Arabia, Qatar, Turkey</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-primary-foreground/10 border-primary-foreground/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-foreground">Asia-Pacific</h3>
-                <p className="text-primary-foreground/80 text-sm">China, India, Southeast Asia</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-primary-foreground/10 border-primary-foreground/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-foreground">Europe</h3>
-                <p className="text-primary-foreground/80 text-sm">United Kingdom, European Union</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-primary-foreground/10 border-primary-foreground/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-foreground">Americas</h3>
-                <p className="text-primary-foreground/80 text-sm">United States, Brazil, Latin America</p>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-4 text-primary-foreground">Dubai, UAE</h3>
+                <p className="text-primary-foreground/80 leading-relaxed">
+                  DWC BUSINESS CENTER<br />
+                  LEVEL 4 BUILDING A2<br />
+                  DUBAI SOUTH BUSINESS PARK
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -198,8 +187,8 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Discover how Adams Minerals and Consultancy can support your mineral sector operations with our specialized 
-            expertise and comprehensive consultancy services.
+            Discover how Afri-Rise can support your African business with affordable financing solutions and expert 
+            consultancy services for projects with social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">

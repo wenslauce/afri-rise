@@ -8,69 +8,112 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Company Info Card */}
           <div className="glass-card p-6 rounded-2xl">
-            <h3 className="text-xl font-bold mb-4">Adams Minerals and Consultancy</h3>
+            <h3 className="text-xl font-bold mb-4">Afri-Rise</h3>
+            <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">
+              The African Fund, For African Companies
+            </p>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
-              Excellence in minerals trading and strategic consultancy services. Expert guidance in mineral resources, 
-              trade facilitation, and comprehensive business consultancy solutions.
+              A Fund Management Consultancy firm assisting businesses in getting affordable financing for Private Sector African Projects with communal social impact.
             </p>
             {/* Social Media Icons */}
             <div className="flex gap-3">
               <a
-                href="#"
-                className="p-2 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                href="https://facebook.com/afririse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg bg-primary-foreground/10 hover:bg-[#1877F2] hover:scale-110 transition-all duration-300"
+                aria-label="Follow us on Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                className="p-2 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                href="https://twitter.com/afririse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg bg-primary-foreground/10 hover:bg-[#1DA1F2] hover:scale-110 transition-all duration-300"
+                aria-label="Follow us on Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                className="p-2 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                href="https://linkedin.com/company/afririse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg bg-primary-foreground/10 hover:bg-[#0A66C2] hover:scale-110 transition-all duration-300"
+                aria-label="Connect with us on LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                className="p-2 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
+                href="https://instagram.com/afririse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg bg-primary-foreground/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:scale-110 transition-all duration-300"
+                aria-label="Follow us on Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links Card */}
+          {/* Industries Card */}
           <div className="glass-card p-6 rounded-2xl">
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Industries</h4>
             <ul className="space-y-3 text-sm">
-              <li>
+              <li className="flex items-center gap-2">
                 <Link
-                  href="/about"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-2"
+                  href="/industries/finance"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  About Us
+                  Finance
+                </Link>
+                <span className="text-primary-foreground/50">•</span>
+                <Link
+                  href="/industries/energy"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Energy
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <Link
+                  href="/industries/agriculture"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Agriculture
+                </Link>
+                <span className="text-primary-foreground/50">•</span>
+                <Link
+                  href="/industries/ict"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  ICT
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-2"
+                  href="/industries/infrastructure"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Services
+                  Infrastructure
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/skr-tracking"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-2"
+                  href="/industries/insurance"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  SKR & Tracking
+                  Insurance
                 </Link>
               </li>
-
+              <li>
+                <Link
+                  href="/industries/greenfield"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Greenfield Projects
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -78,12 +121,57 @@ export function Footer() {
           <div className="glass-card p-6 rounded-2xl">
             <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-3 text-sm">
-              <li className="text-primary-foreground/80">Minerals Trading</li>
-              <li className="text-primary-foreground/80">Strategic Consultancy</li>
-              <li className="text-primary-foreground/80">Crypto Desk & Digital Payments</li>
-              <li className="text-primary-foreground/80">Trade Facilitation</li>
-              <li className="text-primary-foreground/80">Risk Management</li>
-              <li className="text-primary-foreground/80">Regulatory Compliance</li>
+              <li>
+                <Link
+                  href="/services/fund-management"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Fund Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/project-management"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Project Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/strategic-planning"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Strategic Planning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/investment-advisory"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Investment Advisory
+                </Link>
+              </li>
+            </ul>
+            <h4 className="font-semibold mt-6 mb-4">Quick Links</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -94,16 +182,22 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
                 <span className="text-primary-foreground/80">
-                  Broadway, National Road, Entebbe, Uganda
+                  Nairobi: WU YI Plaza, Galana Road, Kilimani
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
+                <span className="text-primary-foreground/80">
+                  Dubai: DWC Business Center, Level 4, Building A2
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="flex-shrink-0 text-[#ef393b]" />
-                <span className="text-primary-foreground/80">+256784850601</span>
+                <span className="text-primary-foreground/80">+1 917-730-2179</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0 text-[#ef393b]" />
-                <span className="text-primary-foreground/80">info@adamsmineralsconsultancy.com</span>
+                <span className="text-primary-foreground/80">info@afri-rise.com</span>
               </li>
             </ul>
             <Link
@@ -119,14 +213,14 @@ export function Footer() {
           <div className="flex items-start gap-3">
             <Info size={20} className="flex-shrink-0 text-[#ef393b] mt-0.5" />
             <div>
-              <h5 className="font-semibold mb-2">Legal Disclaimer</h5>
+              <h5 className="font-semibold mb-2">About Afri-Rise</h5>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                Adams Minerals and Consultancy Limited operates as a specialized minerals trading and strategic 
-                consultancy firm. We provide expert guidance in mineral resource assessment, trade facilitation, 
-                and comprehensive business consultancy services. Our expertise spans mineral market analysis, 
-                resource evaluation, and strategic business advisory services. We maintain the highest standards 
-                of professional integrity and regulatory compliance in all our operations, ensuring optimal 
-                service delivery through our specialized knowledge and strategic partnerships.
+                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in 
+                getting affordable financing for Private Sector African Projects that have a communal social impact. 
+                With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies 
+                (Ronami Holdings Ltd), specializing in Fund Management, Project Management, Strategic Planning, and 
+                Investment Advisory Services across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                ICT, and Greenfield sectors.
               </p>
             </div>
           </div>
@@ -134,7 +228,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/70">
-            <p>&copy; {new Date().getFullYear()} Adams Minerals and Consultancy Limited. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Afri-Rise Equity Limited. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-6">
               <Link href="/case-studies" className="hover:text-primary-foreground transition-colors">
                 Case Studies

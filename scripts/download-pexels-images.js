@@ -1,220 +1,227 @@
+/**
+ * Pexels Image Download Script for Afri-Rise Website
+ * 
+ * This script downloads relevant images from Pexels API for the Afri-Rise website.
+ * It targets keywords related to African business, fund management, and industry sectors.
+ */
+
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
+// Configuration
 const PEXELS_API_KEY = '9jaGUuh9gt15nKMgNMdA1ReUPj5mJmMkqnnRBaowq9kq7qjUYhPV9yR1';
-const PUBLIC_DIR = path.join(__dirname, '..', 'public');
+const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'images', 'afri-rise');
+const IMAGES_PER_QUERY = 3;
 
-// Comprehensive list of all images needed for Adams Minerals and Consultancy website
-const imageRequirements = [
-  // Service Images (Homepage)
-  {
-    filename: 'service-commodities-trading.jpg',
-    query: 'gold mining precious metals',
-    description: 'Minerals Trading - Gold, precious metals, mining operations'
-  },
-  {
-    filename: 'service-consultancy.jpg', 
-    query: 'business meeting consultation office',
-    description: 'Strategic Consultancy - Business meeting, professional consultation'
-  },
-  {
-    filename: 'service-trade-finance.jpg',
-    query: 'international trade finance documents',
-    description: 'Trade Facilitation & Finance - Trade documents, international business'
-  },
-  {
-    filename: 'service-logistics.jpg',
-    query: 'cargo shipping containers logistics',
-    description: 'Logistics & Supply Chain - Shipping, cargo, transportation'
-  },
-  {
-    filename: 'service-insurance.jpg',
-    query: 'business insurance protection handshake',
-    description: 'Risk Management & Insurance - Business protection, handshake'
-  },
-  {
-    filename: 'service-wealth-management.jpg',
-    query: 'investment portfolio financial planning',
-    description: 'Investment Advisory - Financial planning, investment charts'
-  },
-  {
-    filename: 'service-crypto-desk.jpg',
-    query: 'cryptocurrency bitcoin digital payments',
-    description: 'Crypto Desk - Cryptocurrency, digital payments, blockchain'
-  },
-  {
-    filename: 'service-compliance.jpg',
-    query: 'legal compliance regulations documents',
-    description: 'Regulatory Compliance - Legal documents, compliance, regulations'
-  },
-
-  // Hero and About Images
-  {
-    filename: 'global-trade-shipping-containers-port-aerial-view.jpg',
-    query: 'mining site aerial view industrial',
-    description: 'Hero Video Poster - Mining site, industrial operations, aerial view'
-  },
-  {
-    filename: 'professional-business-handshake-global-partnership.jpg',
-    query: 'business handshake partnership professional',
-    description: 'About Section - Professional handshake, business partnership'
-  },
-  {
-    filename: 'modern-office-building-corporate-headquarters.jpg',
-    query: 'modern office building corporate headquarters',
-    description: 'About Page - Corporate headquarters, modern office building'
-  },
-
-  // News Images
-  {
-    filename: 'news-expansion-west-africa.jpg',
-    query: 'africa map business expansion',
-    description: 'News - West Africa expansion, map, business growth'
-  },
-  {
-    filename: 'news-mineral-partnership.jpg',
-    query: 'mineral processing facility industrial',
-    description: 'News - Mineral processing, industrial facility, partnership'
-  },
-  {
-    filename: 'news-minerals-growth.jpg',
-    query: 'mining growth chart business success',
-    description: 'News - Business growth, mining success, charts'
-  },
-  {
-    filename: 'news-tracking-platform-launch.jpg',
-    query: 'digital technology platform tracking',
-    description: 'News - Digital platform, technology, tracking system'
-  },
-  {
-    filename: 'news-sustainability-milestone.jpg',
-    query: 'sustainable mining environment green',
-    description: 'News - Sustainable mining, environmental responsibility'
-  },
-  {
-    filename: 'news-industry-award.jpg',
-    query: 'business award trophy achievement',
-    description: 'News - Industry award, trophy, business achievement'
-  },
-
-  // Branding Images
-  {
-    filename: 'og-image.png',
-    query: 'minerals consultancy professional business',
-    description: 'Open Graph - Professional business, minerals, consultancy branding'
-  }
+// Search queries targeting Afri-Rise's brand and services
+const SEARCH_QUERIES = [
+  'african business meeting',
+  'fund management',
+  'investment advisory',
+  'project management africa',
+  'strategic planning business',
+  'african finance',
+  'african energy sector',
+  'african agriculture',
+  'african infrastructure',
+  'african technology',
+  'nairobi business',
+  'dubai business center'
 ];
 
-// Function to search Pexels API
-async function searchPexels(query, perPage = 5) {
+// Ensure output directory exists
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  console.log(`✓ Created directory: ${OUTPUT_DIR}`);
+}
+
+/**
+ * Make HTTPS request to Pexels API
+ */
+function pexelsRequest(endpoint) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'api.pexels.com',
-      path: `/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape`,
+      path: endpoint,
       method: 'GET',
       headers: {
         'Authorization': PEXELS_API_KEY
       }
     };
 
-    const req = https.request(options, (res) => {
+    https.get(options, (res) => {
       let data = '';
-      res.on('data', (chunk) => data += chunk);
+      
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+      
       res.on('end', () => {
-        try {
-          const result = JSON.parse(data);
-          resolve(result);
-        } catch (error) {
-          reject(error);
+        if (res.statusCode === 200) {
+          resolve(JSON.parse(data));
+        } else {
+          reject(new Error(`API request failed with status ${res.statusCode}: ${data}`));
         }
       });
+    }).on('error', (err) => {
+      reject(err);
     });
-
-    req.on('error', reject);
-    req.end();
   });
 }
 
-// Function to download image
-async function downloadImage(url, filepath) {
+/**
+ * Download image from URL
+ */
+function downloadImage(url, filepath) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(filepath);
     
     https.get(url, (response) => {
       response.pipe(file);
+      
       file.on('finish', () => {
         file.close();
         resolve();
       });
-    }).on('error', (error) => {
-      fs.unlink(filepath, () => {}); // Delete the file on error
-      reject(error);
+    }).on('error', (err) => {
+      fs.unlink(filepath, () => {});
+      reject(err);
     });
   });
 }
 
-// Main function to download all images
-async function downloadAllImages() {
-  console.log('🚀 Starting Adams Minerals and Consultancy image download...');
-  console.log(`📁 Target directory: ${PUBLIC_DIR}`);
+/**
+ * Sanitize filename
+ */
+function sanitizeFilename(str) {
+  return str.toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Main execution
+ */
+async function main() {
+  console.log('🚀 Starting Pexels image download for Afri-Rise...\n');
   
-  // Ensure public directory exists
-  if (!fs.existsSync(PUBLIC_DIR)) {
-    fs.mkdirSync(PUBLIC_DIR, { recursive: true });
-  }
+  const downloadedImages = [];
+  let totalDownloaded = 0;
 
-  let successCount = 0;
-  let errorCount = 0;
-
-  for (const imageReq of imageRequirements) {
+  for (const query of SEARCH_QUERIES) {
+    console.log(`\n📸 Searching for: "${query}"`);
+    
     try {
-      console.log(`\n🔍 Searching for: ${imageReq.description}`);
-      console.log(`📝 Query: "${imageReq.query}"`);
+      // Search for photos
+      const endpoint = `/v1/search?query=${encodeURIComponent(query)}&per_page=${IMAGES_PER_QUERY}&orientation=landscape`;
+      const data = await pexelsRequest(endpoint);
       
-      const searchResult = await searchPexels(imageReq.query);
-      
-      if (searchResult.photos && searchResult.photos.length > 0) {
-        // Get the highest quality image (original)
-        const photo = searchResult.photos[0];
-        const imageUrl = photo.src.original;
-        const filepath = path.join(PUBLIC_DIR, imageReq.filename);
-        
-        console.log(`⬇️  Downloading: ${imageReq.filename}`);
-        console.log(`🔗 Source: ${imageUrl}`);
-        
-        await downloadImage(imageUrl, filepath);
-        
-        console.log(`✅ Success: ${imageReq.filename}`);
-        successCount++;
-        
-        // Add a small delay to respect API rate limits
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-      } else {
-        console.log(`❌ No images found for: ${imageReq.filename}`);
-        errorCount++;
+      if (!data.photos || data.photos.length === 0) {
+        console.log(`  ⚠️  No images found for "${query}"`);
+        continue;
       }
-      
-    } catch (error) {
-      console.log(`❌ Error downloading ${imageReq.filename}:`, error.message);
-      errorCount++;
+
+      console.log(`  ✓ Found ${data.photos.length} images`);
+
+      // Download each image
+      for (let i = 0; i < Math.min(data.photos.length, IMAGES_PER_QUERY); i++) {
+        const photo = data.photos[i];
+        const filename = `${sanitizeFilename(query)}-${i + 1}.jpg`;
+        const filepath = path.join(OUTPUT_DIR, filename);
+        
+        // Use large size for quality
+        const imageUrl = photo.src.large;
+        
+        try {
+          await downloadImage(imageUrl, filepath);
+          console.log(`  ✓ Downloaded: ${filename}`);
+          
+          downloadedImages.push({
+            filename,
+            query,
+            photographer: photo.photographer,
+            photographerUrl: photo.photographer_url,
+            pexelsUrl: photo.url,
+            alt: photo.alt || query,
+            width: photo.width,
+            height: photo.height
+          });
+          
+          totalDownloaded++;
+          
+          // Small delay to respect API rate limits
+          await new Promise(resolve => setTimeout(resolve, 500));
+        } catch (err) {
+          console.error(`  ✗ Failed to download ${filename}:`, err.message);
+        }
+      }
+    } catch (err) {
+      console.error(`  ✗ Error searching for "${query}":`, err.message);
     }
   }
 
-  console.log('\n📊 Download Summary:');
-  console.log(`✅ Successful downloads: ${successCount}`);
-  console.log(`❌ Failed downloads: ${errorCount}`);
-  console.log(`📁 Images saved to: ${PUBLIC_DIR}`);
+  // Generate summary report
+  console.log('\n' + '='.repeat(60));
+  console.log('📊 DOWNLOAD SUMMARY');
+  console.log('='.repeat(60));
+  console.log(`Total images downloaded: ${totalDownloaded}`);
+  console.log(`Output directory: ${OUTPUT_DIR}`);
   
-  if (successCount > 0) {
-    console.log('\n🎉 Image download complete! Your Adams Minerals and Consultancy website now has fresh, professional images.');
-  }
+  // Save metadata file
+  const metadataPath = path.join(OUTPUT_DIR, 'image-metadata.json');
+  fs.writeFileSync(metadataPath, JSON.stringify(downloadedImages, null, 2));
+  console.log(`\n✓ Metadata saved to: ${metadataPath}`);
+
+  // Generate usage guide
+  console.log('\n' + '='.repeat(60));
+  console.log('💡 USAGE RECOMMENDATIONS');
+  console.log('='.repeat(60));
+  
+  const usageGuide = {
+    'Hero Section': downloadedImages.filter(img => 
+      img.query.includes('african business') || img.query.includes('nairobi')
+    ).slice(0, 2),
+    'Services Section': downloadedImages.filter(img => 
+      img.query.includes('fund management') || 
+      img.query.includes('investment') || 
+      img.query.includes('project management') ||
+      img.query.includes('strategic planning')
+    ).slice(0, 4),
+    'Industries Section': downloadedImages.filter(img => 
+      img.query.includes('finance') || 
+      img.query.includes('energy') || 
+      img.query.includes('agriculture') ||
+      img.query.includes('infrastructure') ||
+      img.query.includes('technology')
+    ).slice(0, 7),
+    'About Section': downloadedImages.filter(img => 
+      img.query.includes('business meeting') || img.query.includes('dubai')
+    ).slice(0, 2)
+  };
+
+  Object.entries(usageGuide).forEach(([section, images]) => {
+    if (images.length > 0) {
+      console.log(`\n${section}:`);
+      images.forEach(img => {
+        console.log(`  - ${img.filename}`);
+        console.log(`    Alt text: "${img.alt}"`);
+        console.log(`    Photo by: ${img.photographer}`);
+      });
+    }
+  });
+
+  console.log('\n' + '='.repeat(60));
+  console.log('✅ Image download complete!');
+  console.log('='.repeat(60));
+  console.log('\n📝 ATTRIBUTION NOTICE:');
+  console.log('All images are from Pexels and require attribution.');
+  console.log('Photographer credits are included in image-metadata.json');
+  console.log('\n');
 }
 
 // Run the script
-if (require.main === module) {
-  downloadAllImages().catch(console.error);
-}
-
-module.exports = { downloadAllImages, imageRequirements };
+main().catch(err => {
+  console.error('\n❌ Script failed:', err);
+  process.exit(1);
+});

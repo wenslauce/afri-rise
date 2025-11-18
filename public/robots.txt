@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.adamsmineralsconsultancy.com/sitemap.xml
+Sitemap: https://www.afri-rise.com/sitemap.xml
 
 # Allow all major search engines
 User-agent: Googlebot

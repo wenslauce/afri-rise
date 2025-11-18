@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">New Quote Request</h1>
-          <p style="margin: 10px 0 0 0; opacity: 0.9;">Adams Minerals and Consultancy</p>
+          <p style="margin: 10px 0 0 0; opacity: 0.9;">Afri-Rise Equity Limited</p>
         </div>
         
         <div style="background-color: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
           </div>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 14px;">
-            <p>This quote request was submitted from the Adams Minerals and Consultancy website.</p>
+            <p>This quote request was submitted from the Afri-Rise website.</p>
             <p>Please respond to the client directly at: <a href="mailto:${formData.email}" style="color: #1e3a8a;">${formData.email}</a></p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">Quote Request Received</h1>
-          <p style="margin: 10px 0 0 0; opacity: 0.9;">Adams Minerals and Consultancy</p>
+          <p style="margin: 10px 0 0 0; opacity: 0.9;">Afri-Rise - The African Fund, For African Companies</p>
         </div>
         
         <div style="background-color: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
@@ -96,35 +96,36 @@ export async function POST(request: NextRequest) {
           </div>
           
           <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-            Our mineral and consultancy specialists will review your requirements and provide you with a detailed quote within 24-48 hours. We will include pricing, timelines, and any additional recommendations based on your specific needs.
+            Our fund management and consultancy specialists will review your requirements and provide you with a detailed quote within 24-48 hours. We will include pricing, timelines, and recommendations tailored to your African business needs.
           </p>
           
           <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="margin-top: 0;">Need Immediate Assistance?</h3>
-            <p style="margin: 5px 0;"><strong>Phone:</strong> +256784850601</p>
-            <p style="margin: 5px 0;"><strong>Emergency Hotline:</strong> +256784850601 (24/7)</p>
-            <p style="margin: 5px 0;"><strong>Email:</strong> info@adamsmineralsconsultancy.com</p>
+            <p style="margin: 5px 0;"><strong>Phone:</strong> +1 917-730-2179</p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> info@afri-rise.com</p>
+            <p style="margin: 5px 0;"><strong>Nairobi Office:</strong> WU YI Plaza, Galana Road, Kilimani</p>
+            <p style="margin: 5px 0;"><strong>Dubai Office:</strong> DWC Business Center, Level 4, Building A2</p>
           </div>
           
           <p style="font-size: 16px; line-height: 1.6; margin-bottom: 0;">
             Best regards,<br>
-            <strong>Adams Minerals and Consultancy Team</strong>
+            <strong>Afri-Rise Team</strong>
           </p>
         </div>
       </div>
     `
 
-    // Send email to Adams Minerals and Consultancy team
+    // Send email to Afri-Rise team
     const teamEmailResult = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'noreply@adamsmineralsconsultancy.com',
-      to: [process.env.TO_EMAIL || 'info@adamsmineralsconsultancy.com'],
+      from: process.env.FROM_EMAIL || 'noreply@afri-rise.com',
+      to: [process.env.TO_EMAIL || 'info@afri-rise.com'],
       subject: `New Quote Request - ${serviceName}`,
       html: teamEmailHtml,
     })
 
     // Send confirmation email to client
     const confirmationEmailResult = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'noreply@adamsmineralsconsultancy.com',
+      from: process.env.FROM_EMAIL || 'noreply@afri-rise.com',
       to: [email],
       subject: `Quote Request Received - ${serviceName}`,
       html: confirmationEmailHtml,
@@ -147,7 +148,7 @@ export async function POST(request: NextRequest) {
         message: 'Service quote request submitted successfully',
         emailId: teamEmailResult.data?.id,
         confirmationId: confirmationEmailResult.data?.id,
-        referenceId: `AMC-${Date.now().toString().slice(-6)}`
+        referenceId: `AFR-${Date.now().toString().slice(-6)}`
       },
       { status: 200 }
     )
