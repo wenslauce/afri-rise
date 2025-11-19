@@ -82,7 +82,7 @@ export default function InvestmentAdvisoryPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </CardContent>
@@ -106,12 +106,12 @@ export default function InvestmentAdvisoryPage() {
             <Link href="/services/investment-advisory/opportunity-analysis">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Search className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Search className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Investment Opportunity Analysis</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Comprehensive analysis of investment opportunities across African markets and sectors.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -120,12 +120,12 @@ export default function InvestmentAdvisoryPage() {
             <Link href="/services/investment-advisory/due-diligence">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <FileText className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <FileText className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Due Diligence Services</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Thorough due diligence to assess investment risks and opportunities in African markets.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -134,12 +134,12 @@ export default function InvestmentAdvisoryPage() {
             <Link href="/services/investment-advisory/financial-modeling">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <DollarSign className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <DollarSign className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Financial Modeling & Valuation</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Expert financial modeling and valuation services for African investment decisions.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -148,12 +148,12 @@ export default function InvestmentAdvisoryPage() {
             <Link href="/services/investment-advisory/risk-assessment">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Shield className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Shield className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Risk Assessment & Management</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Comprehensive risk assessment and management strategies for African investments.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -162,12 +162,12 @@ export default function InvestmentAdvisoryPage() {
             <Link href="/services/investment-advisory/portfolio-diversification">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Layers className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Layers className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Portfolio Diversification</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Strategic portfolio diversification across African sectors for optimal returns.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>

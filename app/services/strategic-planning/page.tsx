@@ -82,7 +82,7 @@ export default function StrategicPlanningPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </CardContent>
@@ -106,12 +106,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/business-strategy">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Lightbulb className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Lightbulb className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Business Strategy Development</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Comprehensive business strategy development aligned with African market opportunities and challenges.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -120,12 +120,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/market-entry">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Map className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Map className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Market Entry Planning</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Strategic guidance for entering and expanding in African markets with local expertise and insights.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -134,12 +134,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/growth-strategy">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <TrendingUp className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <TrendingUp className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Growth Strategy Formulation</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Sustainable growth strategies that drive business success while creating positive social impact.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -148,12 +148,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/competitive-analysis">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Target className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Target className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Competitive Analysis</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     In-depth market analysis and competitive positioning for African business environments.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -162,12 +162,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/organizational-development">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Users className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Users className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Organizational Development</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Build strong organizational structures and capabilities for sustainable African business growth.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -176,12 +176,12 @@ export default function StrategicPlanningPage() {
             <Link href="/services/strategic-planning/performance-metrics">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <BarChart className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <BarChart className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Performance Metrics & KPIs</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     KPI development and performance tracking to measure success and guide strategic decision-making.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>

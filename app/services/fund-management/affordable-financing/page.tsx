@@ -86,7 +86,7 @@ export default function AffordableFinancingPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
                   </CardContent>
@@ -110,7 +110,7 @@ export default function AffordableFinancingPage() {
               <ul className="space-y-3">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#ef393b] flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-[#B3892B] flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">{feature}</span>
                   </li>
                 ))}
@@ -145,7 +145,7 @@ export default function AffordableFinancingPage() {
             ].map((item, index) => (
               <Card key={index} className="card-hover text-center">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-full bg-[#ef393b] text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#B3892B] text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

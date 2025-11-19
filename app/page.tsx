@@ -63,7 +63,7 @@ export default function HomePage() {
             Private Sector African Projects that have a communal social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/services">
                 Explore Services <ArrowRight className="ml-2" size={20} />
               </Link>
@@ -110,7 +110,7 @@ export default function HomePage() {
                 specializing in Business Development across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
                 ICT, and Greenfield sectors.
               </p>
-              <Button asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
+              <Button asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
                 <Link href="/about">
                   Learn More About Us <ArrowRight className="ml-2" size={20} />
                 </Link>
@@ -150,7 +150,7 @@ export default function HomePage() {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">{service.description}</p>
-                    <div className="flex items-center text-[#ef393b] font-medium">
+                    <div className="flex items-center text-[#B3892B] font-medium">
                       Learn More <ArrowRight className="ml-2" size={16} />
                     </div>
                   </CardContent>
@@ -159,7 +159,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
+            <Button size="lg" asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/services">
                 View All Services <ArrowRight className="ml-2" size={20} />
               </Link>
@@ -231,7 +231,7 @@ export default function HomePage() {
             Partner with Afri-Rise for affordable financing solutions and expert consultancy services for your 
             Private Sector African Projects with social impact.
           </p>
-          <Button size="lg" asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
+          <Button size="lg" asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
             <Link href="/contact">
               Get Started Today <ArrowRight className="ml-2" size={20} />
             </Link>

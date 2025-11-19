@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, Phone, MapPin, Clock, CheckCircle2, AlertTriangle } from "@/components/icons"
 import { useState } from "react"
 import { countries } from "@/lib/countries"
+import { Turnstile } from "@marsidev/react-turnstile"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState<string | null>(null)
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -49,13 +51,20 @@ export default function ContactPage() {
       return
     }
 
+    // Verify Turnstile token
+    if (!turnstileToken) {
+      setError('Please complete the security verification')
+      setIsLoading(false)
+      return
+    }
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken }),
       })
 
       const result = await response.json()
@@ -280,7 +289,18 @@ export default function ContactPage() {
                         placeholder="Tell us about your African business project, funding needs, or consultancy requirements..."
                       />
                     </div>
-                    <Button type="submit" size="lg" className="w-full btn-hover-lift" disabled={isLoading}>
+                    <div>
+                      <Label htmlFor="turnstile">Security Verification</Label>
+                      <Turnstile
+                        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
+                        onSuccess={(token) => setTurnstileToken(token)}
+                        onError={() => setError('Security verification failed. Please refresh the page.')}
+                        onExpire={() => setTurnstileToken(null)}
+                        theme="light"
+                        className="mt-2"
+                      />
+                    </div>
+                    <Button type="submit" size="lg" className="w-full btn-hover-lift" disabled={isLoading || !turnstileToken}>
                       {isLoading ? "Submitting..." : "Submit Inquiry"}
                     </Button>
                   </form>

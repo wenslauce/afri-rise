@@ -11,11 +11,11 @@ export default function CaseStudiesPage() {
       client: "Major Mining Corporation",
       region: "East Africa to Asia",
       value: "$50M+",
-      services: ["Trade Finance", "Logistics", "Insurance", "SKR Security"],
+      services: ["Trade Finance", "Logistics", "Insurance", "Secure Transport"],
       challenge:
         "A major mining corporation needed to export high-value mineral consignments from East Africa to Asia with comprehensive security and financing.",
       solution:
-        "Afri-Rise provided end-to-end facilitation including structured trade finance, SKR-secured logistics with armed escort, marine insurance coverage, and customs coordination across multiple jurisdictions.",
+        "Afri-Rise provided end-to-end facilitation including structured trade finance, secure logistics coordination, marine insurance coverage, and customs coordination across multiple jurisdictions.",
       results: [
         "100% secure delivery with zero incidents",
         "30% reduction in transaction costs",

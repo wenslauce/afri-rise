@@ -180,23 +180,23 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-4 text-sm mb-6">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
+                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#B3892B]" />
                 <span className="text-primary-foreground/80">
                   Nairobi: WU YI Plaza, Galana Road, Kilimani
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
+                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#B3892B]" />
                 <span className="text-primary-foreground/80">
                   Dubai: DWC Business Center, Level 4, Building A2
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="flex-shrink-0 text-[#ef393b]" />
+                <Phone size={18} className="flex-shrink-0 text-[#B3892B]" />
                 <span className="text-primary-foreground/80">+1 917-730-2179</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="flex-shrink-0 text-[#ef393b]" />
+                <Mail size={18} className="flex-shrink-0 text-[#B3892B]" />
                 <span className="text-primary-foreground/80">info@afri-rise.com</span>
               </li>
             </ul>
@@ -211,15 +211,15 @@ export function Footer() {
 
         <div className="glass-card p-6 rounded-2xl mb-8">
           <div className="flex items-start gap-3">
-            <Info size={20} className="flex-shrink-0 text-[#ef393b] mt-0.5" />
+            <Info size={20} className="flex-shrink-0 text-[#B3892B] mt-0.5" />
             <div>
               <h5 className="font-semibold mb-2">About Afri-Rise</h5>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in 
-                getting affordable financing for Private Sector African Projects that have a communal social impact. 
-                With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies 
-                (Ronami Holdings Ltd), specializing in Fund Management, Project Management, Strategic Planning, and 
-                Investment Advisory Services across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in
+                getting affordable financing for Private Sector African Projects that have a communal social impact.
+                With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies
+                (Ronami Holdings Ltd), specializing in Fund Management, Project Management, Strategic Planning, and
+                Investment Advisory Services across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure,
                 ICT, and Greenfield sectors.
               </p>
             </div>
@@ -239,10 +239,10 @@ export function Footer() {
               <Link href="/careers" className="hover:text-primary-foreground transition-colors">
                 Careers
               </Link>
-              <Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">
+              <Link href="/privacy" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="hover:text-primary-foreground transition-colors">
+              <Link href="/terms" className="hover:text-primary-foreground transition-colors">
                 Terms of Service
               </Link>
             </div>

@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle2, AlertTriangle } from "@/components/icons"
 import { countries } from "@/lib/countries"
+import { Turnstile } from "@marsidev/react-turnstile"
 
 interface ServiceOnboardingFormProps {
   serviceName: string
@@ -23,6 +24,7 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
   const [selectedCountry, setSelectedCountry] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState<string | null>(null)
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -40,11 +42,19 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
       country: selectedCountry,
       serviceName,
       requirements: formData.get('requirements') as string,
+      turnstileToken,
     }
 
     // Basic validation
     if (!data.firstName?.trim() || !data.lastName?.trim() || !data.email?.trim() || !data.phone?.trim() || !data.country || !data.requirements?.trim()) {
       setError('Please fill in all required fields')
+      setIsLoading(false)
+      return
+    }
+
+    // Verify Turnstile token
+    if (!turnstileToken) {
+      setError('Please complete the security verification')
       setIsLoading(false)
       return
     }
@@ -188,7 +198,18 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
             />
           </div>
 
-          <Button type="submit" size="lg" className="w-full btn-hover-lift" disabled={isLoading}>
+          <div className="space-y-2">
+            <Label>Security Verification</Label>
+            <Turnstile
+              siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
+              onSuccess={(token) => setTurnstileToken(token)}
+              onError={() => setError('Security verification failed. Please refresh the page.')}
+              onExpire={() => setTurnstileToken(null)}
+              theme="light"
+            />
+          </div>
+
+          <Button type="submit" size="lg" className="w-full btn-hover-lift" disabled={isLoading || !turnstileToken}>
             {isLoading ? "Submitting..." : "Submit Inquiry"}
           </Button>
 

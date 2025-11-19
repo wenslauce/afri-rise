@@ -92,7 +92,7 @@ export default function FundManagementPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </CardContent>
@@ -116,12 +116,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/affordable-financing">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <DollarSign className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <DollarSign className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Affordable Financing Solutions</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Competitive financing options designed specifically for African private sector projects with flexible terms and affordable rates.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -130,12 +130,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/private-sector-funding">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Target className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Target className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Private Sector Project Funding</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Dedicated funding solutions for private sector initiatives across seven key African industry sectors.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -144,12 +144,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/social-impact-investment">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Users className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Users className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Social Impact Investment</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Investment strategies focused on projects with measurable communal social impact and sustainable development.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -158,12 +158,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/fund-structuring">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <TrendingUp className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <TrendingUp className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Fund Structuring & Administration</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Expert fund structuring, setup, and ongoing administration services for optimal performance and compliance.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -172,12 +172,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/portfolio-management">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Shield className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Shield className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Portfolio Management</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Strategic portfolio management and optimization to maximize returns while managing risk effectively.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -186,12 +186,12 @@ export default function FundManagementPage() {
             <Link href="/services/fund-management/investor-relations">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <CheckCircle className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <CheckCircle className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Investor Relations</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Professional investor relations services including reporting, communication, and stakeholder management.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -259,7 +259,7 @@ export default function FundManagementPage() {
                   <label htmlFor="project" className="text-sm font-medium">Project Details *</label>
                   <textarea id="project" rows={5} className="w-full px-3 py-2 border rounded-md" required></textarea>
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-[#ef393b] text-white hover:bg-[#d73035]">
+                <Button type="submit" size="lg" className="w-full bg-[#B3892B] text-white hover:bg-[#9A7324]">
                   Request Consultation <ArrowRight className="ml-2" size={20} />
                 </Button>
               </form>

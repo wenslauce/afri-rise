@@ -113,7 +113,7 @@ export default function ServicesPage() {
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <CardHeader className="bg-muted">
                   <div className="flex items-start gap-4">
-                    <service.icon className="text-[#ef393b] flex-shrink-0" width={40} height={40} strokeWidth={1.5} />
+                    <service.icon className="text-[#B3892B] flex-shrink-0" width={40} height={40} strokeWidth={1.5} />
                     <div className="flex-1">
                       <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>
                       <p className="text-muted-foreground leading-relaxed">{service.description}</p>
@@ -127,14 +127,14 @@ export default function ServicesPage() {
                       <ul className="grid md:grid-cols-2 gap-2">
                         {service.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                            <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                             <span className="text-muted-foreground">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div className="lg:ml-6">
-                      <Button asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
+                      <Button asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
                         <Link href={service.href}>
                           Learn More <ArrowRight className="ml-2" width={16} height={16} />
                         </Link>
@@ -188,19 +188,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Financial Services & Banking</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Renewable Energy Projects</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Power Generation & Distribution</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Energy Infrastructure</span>
                   </li>
                 </ul>
@@ -213,19 +213,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Agribusiness & Food Security</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Agricultural Technology</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Insurance Services</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Risk Management Solutions</span>
                   </li>
                 </ul>
@@ -238,19 +238,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Commercial Infrastructure</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>ICT & Telecommunications</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Greenfield Projects</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="text-[#ef393b] flex-shrink-0 mt-1" width={16} height={16} />
+                    <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
                     <span>Digital Transformation</span>
                   </li>
                 </ul>

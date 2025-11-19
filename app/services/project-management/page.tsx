@@ -82,7 +82,7 @@ export default function ProjectManagementPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                   </CardContent>
@@ -106,12 +106,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/project-planning">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Target className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Target className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Project Planning & Execution</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Comprehensive project planning from initiation to delivery, ensuring successful execution of African projects.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -120,12 +120,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/resource-allocation">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Users className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Users className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Resource Allocation & Optimization</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Strategic allocation and optimization of human, financial, and material resources for maximum efficiency.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -134,12 +134,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/timeline-budget">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Clock className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Clock className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Timeline & Budget Management</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Expert management of project timelines and budgets to ensure on-time, on-budget delivery.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -148,12 +148,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/stakeholder-coordination">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Globe className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Globe className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Stakeholder Coordination</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Effective coordination and communication with all project stakeholders for seamless collaboration.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -162,12 +162,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/risk-mitigation">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <Shield className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <Shield className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Risk Mitigation Strategies</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Proactive identification and mitigation of project risks to ensure successful outcomes.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>
@@ -176,12 +176,12 @@ export default function ProjectManagementPage() {
             <Link href="/services/project-management/quality-assurance">
               <Card className="card-hover h-full">
                 <CardContent className="p-6">
-                  <CheckCircle className="w-12 h-12 text-[#ef393b] mb-4" />
+                  <CheckCircle className="w-12 h-12 text-[#B3892B] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Quality Assurance & Delivery</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Rigorous quality assurance processes to ensure project deliverables meet the highest standards.
                   </p>
-                  <div className="flex items-center text-[#ef393b] font-medium text-sm">
+                  <div className="flex items-center text-[#B3892B] font-medium text-sm">
                     Learn More <ArrowRight className="ml-2" size={16} />
                   </div>
                 </CardContent>

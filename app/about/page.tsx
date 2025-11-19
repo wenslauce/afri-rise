@@ -138,7 +138,7 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">
-                  <value.icon className="text-[#ef393b] mx-auto mb-4" size={48} strokeWidth={1.5} />
+                  <value.icon className="text-[#B3892B] mx-auto mb-4" size={48} strokeWidth={1.5} />
                   <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
                 </CardContent>
@@ -191,12 +191,12 @@ export default function AboutPage() {
             consultancy services for projects with social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/services">
                 Explore Our Services <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-[#ef393b] text-[#ef393b] hover:bg-[#ef393b] hover:text-white">
+            <Button size="lg" variant="outline" asChild className="border-[#B3892B] text-[#B3892B] hover:bg-[#B3892B] hover:text-white">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>

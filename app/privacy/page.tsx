@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
       <section className="relative py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
-            <Shield className="w-8 h-8 text-[#ef393b]" />
+            <Shield className="w-8 h-8 text-[#B3892B]" />
             <h1 className="text-4xl md:text-5xl font-bold">Privacy Policy</h1>
           </div>
           <p className="text-lg text-primary-foreground/80">
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             {/* Information We Collect */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Database className="w-6 h-6 text-[#ef393b]" />
+                <Database className="w-6 h-6 text-[#B3892B]" />
                 <h2 className="text-2xl font-bold text-foreground">1. Information We Collect</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
             {/* How We Use Your Information */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <FileText className="w-6 h-6 text-[#ef393b]" />
+                <FileText className="w-6 h-6 text-[#B3892B]" />
                 <h2 className="text-2xl font-bold text-foreground">2. How We Use Your Information</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
             {/* Information Sharing */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <UserCheck className="w-6 h-6 text-[#ef393b]" />
+                <UserCheck className="w-6 h-6 text-[#B3892B]" />
                 <h2 className="text-2xl font-bold text-foreground">3. Information Sharing and Disclosure</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
             {/* Data Security */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Lock className="w-6 h-6 text-[#ef393b]" />
+                <Lock className="w-6 h-6 text-[#B3892B]" />
                 <h2 className="text-2xl font-bold text-foreground">4. Data Security</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
             {/* Your Rights */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Eye className="w-6 h-6 text-[#ef393b]" />
+                <Eye className="w-6 h-6 text-[#B3892B]" />
                 <h2 className="text-2xl font-bold text-foreground">5. Your Privacy Rights</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">

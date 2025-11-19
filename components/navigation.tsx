@@ -38,15 +38,14 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <Image 
-              src="/logo.png" 
-              alt="Afri-Rise" 
-              width={48} 
-              height={48}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Afri-Rise"
+              width={80}
+              height={80}
               className="object-contain"
             />
-            <div className="hidden sm:block text-sm font-medium text-foreground">Afri-Rise</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -96,7 +95,7 @@ export function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
+            <Button asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
@@ -147,7 +146,7 @@ export function Navigation() {
               </Link>
             ))}
             <div className="pt-2">
-              <Button asChild className="w-full btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
+              <Button asChild className="w-full btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

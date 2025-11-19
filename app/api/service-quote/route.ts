@@ -1,13 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { validateEmail, validateRequiredFields, sanitizeInput } from '@/lib/email-utils'
+import { verifyTurnstileToken } from '@/lib/turnstile'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { firstName, lastName, email, phone, company, country, serviceName, requirements } = body
+    const { firstName, lastName, email, phone, company, country, serviceName, requirements, turnstileToken } = body
+
+    // Verify Turnstile token first
+    const isValidToken = await verifyTurnstileToken(turnstileToken)
+    if (!isValidToken) {
+      return NextResponse.json(
+        { error: 'Security verification failed. Please try again.' },
+        { status: 403 }
+      )
+    }
 
     // Validate required fields
     const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'country', 'serviceName', 'requirements']
@@ -42,13 +52,13 @@ export async function POST(request: NextRequest) {
     // Create HTML email content
     const teamEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
+        <div style="background-color: #1D1668; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">New Quote Request</h1>
           <p style="margin: 10px 0 0 0; opacity: 0.9;">Afri-Rise Equity Limited</p>
         </div>
         
         <div style="background-color: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
-          <h2 style="color: #1e3a8a; margin-top: 0;">Client Details</h2>
+          <h2 style="color: #1D1668; margin-top: 0;">Client Details</h2>
           
           <div style="margin-bottom: 20px;">
             <p style="margin: 5px 0; font-size: 16px;"><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
@@ -60,15 +70,15 @@ export async function POST(request: NextRequest) {
           </div>
           
           <div style="margin-bottom: 20px;">
-            <h3 style="color: #1e3a8a;">Requirements</h3>
-            <div style="background-color: white; padding: 15px; border-radius: 4px; border-left: 4px solid #1e3a8a;">
+            <h3 style="color: #1D1668;">Requirements</h3>
+            <div style="background-color: white; padding: 15px; border-radius: 4px; border-left: 4px solid #1D1668;">
               <p style="margin: 0; line-height: 1.6;">${formData.requirements}</p>
             </div>
           </div>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 14px;">
             <p>This quote request was submitted from the Afri-Rise website.</p>
-            <p>Please respond to the client directly at: <a href="mailto:${formData.email}" style="color: #1e3a8a;">${formData.email}</a></p>
+            <p>Please respond to the client directly at: <a href="mailto:${formData.email}" style="color: #1D1668;">${formData.email}</a></p>
           </div>
         </div>
       </div>
@@ -76,7 +86,7 @@ export async function POST(request: NextRequest) {
 
     const confirmationEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
+        <div style="background-color: #1D1668; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">Quote Request Received</h1>
           <p style="margin: 10px 0 0 0; opacity: 0.9;">Afri-Rise - The African Fund, For African Companies</p>
         </div>
@@ -91,7 +101,7 @@ export async function POST(request: NextRequest) {
           </p>
           
           <div style="background-color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #1e3a8a; margin-top: 0;">Your Requirements Summary</h3>
+            <h3 style="color: #1D1668; margin-top: 0;">Your Requirements Summary</h3>
             <p style="margin: 0; line-height: 1.6;">${formData.requirements}</p>
           </div>
           
@@ -99,7 +109,7 @@ export async function POST(request: NextRequest) {
             Our fund management and consultancy specialists will review your requirements and provide you with a detailed quote within 24-48 hours. We will include pricing, timelines, and recommendations tailored to your African business needs.
           </p>
           
-          <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <div style="background-color: #1D1668; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="margin-top: 0;">Need Immediate Assistance?</h3>
             <p style="margin: 5px 0;"><strong>Phone:</strong> +1 917-730-2179</p>
             <p style="margin: 5px 0;"><strong>Email:</strong> info@afri-rise.com</p>

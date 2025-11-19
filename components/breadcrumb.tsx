@@ -32,7 +32,6 @@ export function Breadcrumb() {
       // Special cases for better labels
       if (path === "commodities-trading") label = "Minerals Trading"
       if (path === "crypto-desk") label = "Crypto Desk"
-      if (path === "skr-tracking") label = "SKR Tracking"
       
       breadcrumbs.push({
         label,

@@ -13,13 +13,13 @@ interface ContactFormData {
 export function ContactFormEmail({ data }: { data: ContactFormData }): ReactElement {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-      <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
+      <div style={{ backgroundColor: '#1D1668', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>New Contact Form Submission</h1>
         <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Afri-Rise Equity Limited</p>
       </div>
       
       <div style={{ backgroundColor: '#f8fafc', padding: '30px', borderRadius: '0 0 8px 8px', border: '1px solid #e2e8f0' }}>
-        <h2 style={{ color: '#1e3a8a', marginTop: 0 }}>Contact Details</h2>
+        <h2 style={{ color: '#1D1668', marginTop: 0 }}>Contact Details</h2>
         
         <div style={{ marginBottom: '20px' }}>
           <p style={{ margin: '5px 0', fontSize: '16px' }}>
@@ -48,7 +48,7 @@ export function ContactFormEmail({ data }: { data: ContactFormData }): ReactElem
           </p>
         </div>
 
-        <h3 style={{ color: '#1e3a8a', marginTop: '30px' }}>Message</h3>
+        <h3 style={{ color: '#1D1668', marginTop: '30px' }}>Message</h3>
         <div style={{ 
           backgroundColor: 'white', 
           padding: '20px', 
@@ -80,7 +80,7 @@ export function ContactFormEmail({ data }: { data: ContactFormData }): ReactElem
 export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }): ReactElement {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-      <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
+      <div style={{ backgroundColor: '#1D1668', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>Thank You for Contacting Afri-Rise</h1>
         <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Your inquiry has been received</p>
       </div>
@@ -101,7 +101,7 @@ export function ContactFormConfirmationEmail({ data }: { data: ContactFormData }
           border: '1px solid #e2e8f0',
           marginBottom: '20px'
         }}>
-          <h3 style={{ color: '#1e3a8a', marginTop: 0 }}>Your Inquiry Summary</h3>
+          <h3 style={{ color: '#1D1668', marginTop: 0 }}>Your Inquiry Summary</h3>
           <p style={{ margin: '5px 0', fontSize: '14px' }}>
             <strong>Service:</strong> {data.service}
           </p>

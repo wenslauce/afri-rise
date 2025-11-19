@@ -66,7 +66,7 @@ export default function SocialImpactInvestmentPage() {
               return (
                 <Card key={index} className="card-hover">
                   <CardContent className="p-6 text-center">
-                    <Icon className="w-12 h-12 text-[#ef393b] mb-4 mx-auto" />
+                    <Icon className="w-12 h-12 text-[#B3892B] mb-4 mx-auto" />
                     <h3 className="text-lg font-semibold mb-2">{impact.title}</h3>
                     <p className="text-muted-foreground text-sm">{impact.desc}</p>
                   </CardContent>
@@ -89,7 +89,7 @@ export default function SocialImpactInvestmentPage() {
               <ul className="space-y-3">
                 {criteria.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#ef393b] flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-[#B3892B] flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}

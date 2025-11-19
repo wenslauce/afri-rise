@@ -64,7 +64,7 @@ export default function PartnersPage() {
     },
     {
       name: "G1 Logistics & Security",
-      description: "Secure logistics coordination and SKR-secured shipment management.",
+      description: "Secure logistics coordination and comprehensive shipment management.",
       focus: "Logistics & Supply Chain",
     },
     {
