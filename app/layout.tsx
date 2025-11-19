@@ -1,4 +1,4 @@
-import type React from "react"
+import React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
@@ -77,6 +77,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.afri-rise.com",
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
   },
   verification: {
     google: "your-google-verification-code",
