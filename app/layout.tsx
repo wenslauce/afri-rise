@@ -12,10 +12,10 @@ import { Suspense } from "react"
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: "Afri-Rise Equity Limited | Finance Advisory & Private Equity Consultancy",
+  title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
   description:
     "Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact. Part of Ronami Group of Companies.",
-  generator: "v0.app",
+  generator: "Wenslauce",
   robots: {
     index: true,
     follow: true,

@@ -5,9 +5,9 @@ import { ArrowRight, TrendingUp, Target, Map, BarChart, CheckCircle, Users, Ligh
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Strategic Planning Services | Afri-Rise",
-  description: "Develop strategic plans that drive sustainable growth and create lasting social impact across African markets. Working with thousands of companies worldwide.",
-  keywords: ["strategic planning", "business strategy", "African markets", "growth strategy", "Afri-Rise"],
+  title: "Strategic Planning Services | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "Strategic advisory services to develop plans that drive sustainable growth and create lasting social impact across African markets. Working with thousands of companies worldwide.",
+  keywords: ["strategic planning", "strategic advisory", "business strategy", "African markets", "growth strategy", "finance advisory", "consultancy", "Afri-Rise"],
 }
 
 export default function StrategicPlanningPage() {

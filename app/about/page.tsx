@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { ArrowRight, Target, Eye, Award, Globe2 } from "@/components/icons"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Us | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "The African Fund, For African Companies. Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact.",
+  keywords: ["about Afri-Rise", "finance advisory", "private equity consultancy", "direct investment consultancy", "African fund", "Ronami Group", "investment advisory", "African business"],
+}
 
 export default function AboutPage() {
   const values = [

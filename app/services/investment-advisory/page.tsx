@@ -5,9 +5,9 @@ import { ArrowRight, Globe, TrendingUp, Shield, FileText, CheckCircle, Search, D
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Investment Advisory Services | Afri-Rise",
-  description: "Expert investment advisory services for African business opportunities and sustainable development projects. Working with thousands of companies worldwide.",
-  keywords: ["investment advisory", "African investment", "due diligence", "investment opportunities", "Afri-Rise"],
+  title: "Investment Advisory Services | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "Expert finance advisory and investment consultancy services for African business opportunities and sustainable development projects. Working with thousands of companies worldwide.",
+  keywords: ["investment advisory", "finance advisory", "private equity consultancy", "African investment", "due diligence", "investment opportunities", "direct investment consultancy", "Afri-Rise"],
 }
 
 export default function InvestmentAdvisoryPage() {
@@ -53,7 +53,7 @@ export default function InvestmentAdvisoryPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Investment Advisory Services</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
-              Expert finance advisory and investment consultancy services for African business opportunities and sustainable 
+              Expert finance advisory and investment consultancy services for African business opportunities and sustainable
               development projects. Working with thousands of companies around the world to identify and execute successful investments.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

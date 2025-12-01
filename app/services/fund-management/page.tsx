@@ -5,9 +5,9 @@ import { ArrowRight, DollarSign, TrendingUp, Users, Target, CheckCircle, Shield 
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Fund Management Services | Afri-Rise",
-  description: "Expert fund management solutions for African private sector projects with communal social impact. Working with thousands of companies worldwide.",
-  keywords: ["fund management", "African fund", "private sector financing", "social impact investment", "Afri-Rise"],
+  title: "Fund Management Services | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "Fund management advisory and support for African private sector projects with communal social impact. Working with thousands of companies worldwide.",
+  keywords: ["fund management", "fund management advisory", "African fund", "private sector financing", "social impact investment", "finance advisory", "Afri-Rise"],
 }
 
 export default function FundManagementPage() {

@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
-import { TrendingUp, Globe, Shield, DollarSign, Truck, Briefcase, Zap, Scale, ArrowRight } from "@/components/icons"
+import { TrendingUp, Globe, DollarSign, Briefcase, ArrowRight } from "@/components/icons"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Services | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "Expert finance advisory and private equity consultancy services: Investment Advisory, Strategic Planning, Project Management, and Fund Management for African private sector projects with social impact.",
+  keywords: ["finance advisory", "private equity consultancy", "investment advisory", "strategic planning", "project management", "fund management", "African services", "direct investment consultancy", "Afri-Rise"],
+}
 
 export default function ServicesPage() {
   const services = [

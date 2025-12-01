@@ -5,9 +5,9 @@ import { ArrowRight, Briefcase, Target, Clock, Users, CheckCircle, Shield, Globe
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Project Management Services | Afri-Rise",
-  description: "Comprehensive project management services for impactful African initiatives across multiple sectors. Working with thousands of companies worldwide.",
-  keywords: ["project management", "African projects", "project delivery", "Afri-Rise"],
+  title: "Project Management Services | Finance Advisory & Private Equity Consultancy | Afri-Rise",
+  description: "Comprehensive project management consultancy services for impactful African initiatives across multiple sectors. Working with thousands of companies worldwide.",
+  keywords: ["project management", "project management consultancy", "African projects", "project delivery", "finance advisory", "consultancy", "Afri-Rise"],
 }
 
 export default function ProjectManagementPage() {
