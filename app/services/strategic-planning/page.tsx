@@ -53,10 +53,15 @@ export default function StrategicPlanningPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Strategic Planning Services</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
-              Develop strategic plans that drive sustainable growth and create lasting social impact across African markets. 
-              Working with thousands of companies around the world to build successful strategies.
+              Strategic advisory services to develop plans that drive sustainable growth and create lasting social impact 
+              across African markets. Working with thousands of companies around the world to build successful strategies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
+                <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                  Apply for Funding <ArrowRight className="ml-2" size={20} />
+                </Link>
+              </Button>
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">
                   Get Started <ArrowRight className="ml-2" size={20} />
@@ -196,13 +201,20 @@ export default function StrategicPlanningPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Plan Your Growth?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
-            Partner with Afri-Rise for strategic planning services that drive sustainable African business success.
+            Partner with Afri-Rise for strategic advisory services that drive sustainable African business success.
           </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/contact">
-              Contact Us Today <ArrowRight className="ml-2" size={20} />
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply for Funding <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
+            <Button size="lg" variant="secondary" asChild>
+              <Link href="/contact">
+                Contact Us Today <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

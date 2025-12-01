@@ -93,8 +93,13 @@ export function Navigation() {
             </DropdownMenu>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-2">
+            <Button asChild variant="outline" className="border-[#B3892B] text-[#B3892B] hover:bg-[#B3892B] hover:text-white">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply Now
+              </Link>
+            </Button>
             <Button asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/contact">Contact Us</Link>
             </Button>
@@ -111,6 +116,13 @@ export function Navigation() {
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-border bg-background rounded-b-2xl">
           <div className="px-4 py-4 space-y-2">
+            <div className="pb-2">
+              <Button asChild className="w-full btn-hover-lift border-[#B3892B] text-[#B3892B] hover:bg-[#B3892B] hover:text-white" variant="outline">
+                <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                </Link>
+              </Button>
+            </div>
             {navItems.map((item) => (
               <Link
                 key={item.name}

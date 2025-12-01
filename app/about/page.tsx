@@ -35,8 +35,8 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">About Afri-Rise</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              The African Fund, For African Companies - Empowering businesses with affordable financing for 
-              Private Sector African Projects that create communal social impact.
+              The African Fund, For African Companies - Finance Advisory and Private Equity Consultancy empowering 
+              businesses with direct investment solutions for Private Sector African Projects that create communal social impact.
             </p>
           </div>
         </div>
@@ -50,16 +50,17 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in getting 
-                  affordable financing for Private Sector African Projects that have a communal social impact.
+                  Afri-Rise Equity Limited is a Finance Advisory and Private Equity Consultancy firm specializing in Direct 
+                  Investment Consultancy to assist businesses in getting affordable financing for Private Sector African 
+                  Projects that have a communal social impact.
                 </p>
                 <p>
-                  With over three decades of combined management experience, Afri-Rise specializes in Business Development 
-                  across a myriad of sectors including Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                  With over three decades of combined management experience, Afri-Rise provides expert advisory services 
+                  across a myriad of sectors including Finance, Energy, Agriculture, Commercial Infrastructure, 
                   ICT, and Greenfield projects.
                 </p>
                 <p>
-                  Afri-Rise is part of Ronami Group of Companies (Ronami Holdings Ltd), established in 2013. Ronami International 
+                  Afri-Rise is part of Ronami Group of Companies (Ronami International Limited), established in 2013. Ronami International 
                   collaborates closely with international private companies and organizations, assisting them in adapting their 
                   business models to the local business environment and developing effective business strategies tailored for 
                   the Kenyan and East African market.
@@ -187,10 +188,15 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Discover how Afri-Rise can support your African business with affordable financing solutions and expert 
-            consultancy services for projects with social impact.
+            Discover how Afri-Rise can support your African business with expert finance advisory, private equity 
+            consultancy, and direct investment solutions for projects with social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply for Funding <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
             <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/services">
                 Explore Our Services <ArrowRight className="ml-2" size={20} />

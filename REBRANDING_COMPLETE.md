@@ -14,7 +14,7 @@
 - **Full Name**: Afri-Rise Equity Limited
 - **Short Name**: Afri-Rise
 - **Tagline**: "The African Fund, For African Companies"
-- **Parent Company**: Ronami Group of Companies (Ronami Holdings Ltd)
+- **Parent Company**: Ronami Group of Companies (Ronami International Limited)
 
 ### Contact Information
 - **Email**: info@afri-rise.com

@@ -12,28 +12,28 @@ import { SecurityHighlightsSection } from "@/components/security-highlights-sect
 export default function HomePage() {
   const services = [
     {
-      image: "/images/afri-rise/fund-management-1.jpg",
-      title: "Fund Management",
-      description: "Working with thousands of companies around the world to provide expert fund management solutions for African private sector projects.",
-      href: "/services/fund-management",
-    },
-    {
-      image: "/images/afri-rise/project-management-africa-1.jpg",
-      title: "Project Management",
-      description: "Working with thousands of companies around the world to deliver comprehensive project management services for impactful African initiatives.",
-      href: "/services/project-management",
+      image: "/images/afri-rise/investment-advisory-1.jpg",
+      title: "Investment Advisory",
+      description: "Working with thousands of companies around the world to provide expert finance advisory and investment consultancy services for African business opportunities.",
+      href: "/services/investment-advisory",
     },
     {
       image: "/images/afri-rise/strategic-planning-business-1.jpg",
       title: "Strategic Planning",
-      description: "Working with thousands of companies around the world to develop strategic plans that drive sustainable growth and social impact.",
+      description: "Working with thousands of companies around the world to develop strategic advisory plans that drive sustainable growth and social impact.",
       href: "/services/strategic-planning",
     },
     {
-      image: "/images/afri-rise/investment-advisory-1.jpg",
-      title: "Investment Advisory",
-      description: "Working with thousands of companies around the world to provide expert investment advisory services for African business opportunities.",
-      href: "/services/investment-advisory",
+      image: "/images/afri-rise/project-management-africa-1.jpg",
+      title: "Project Management",
+      description: "Working with thousands of companies around the world to deliver comprehensive project management consultancy services for impactful African initiatives.",
+      href: "/services/project-management",
+    },
+    {
+      image: "/images/afri-rise/fund-management-1.jpg",
+      title: "Fund Management",
+      description: "Working with thousands of companies around the world to provide fund management advisory and support for African private sector projects.",
+      href: "/services/fund-management",
     },
   ]
 
@@ -59,10 +59,15 @@ export default function HomePage() {
             The African Fund, For African Companies
           </h1>
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
-            A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for 
-            Private Sector African Projects that have a communal social impact.
+            A Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy 
+            for Private Sector African Projects that create communal social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply for Funding <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
             <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
               <Link href="/services">
                 Explore Services <ArrowRight className="ml-2" size={20} />
@@ -102,12 +107,13 @@ export default function HomePage() {
                 The African Fund, For African Companies
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in getting 
-                affordable financing for Private Sector African Projects that have a communal social impact.
+                Afri-Rise Equity Limited is a Finance Advisory and Private Equity Consultancy firm specializing in Direct 
+                Investment Consultancy to assist businesses in getting affordable financing for Private Sector African 
+                Projects that have a communal social impact.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies, 
-                specializing in Business Development across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                providing expert advisory services across Finance, Energy, Agriculture, Commercial Infrastructure, 
                 ICT, and Greenfield sectors.
               </p>
               <Button asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
@@ -181,10 +187,10 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">African Focus</h3>
+                <h3 className="text-2xl font-semibold mb-4">Finance Advisory Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Dedicated to assisting African businesses with affordable financing for private sector projects 
-                  that create communal social impact across the continent.
+                  Expert finance advisory and private equity consultancy dedicated to assisting African businesses 
+                  with direct investment solutions for private sector projects that create communal social impact.
                 </p>
               </CardContent>
             </Card>
@@ -199,18 +205,18 @@ export default function HomePage() {
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Three Decades of Experience</h3>
+                <h3 className="text-2xl font-semibold mb-4">Three Decades of Advisory Experience</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Over 30 years of combined management experience in fund management, project management, strategic 
-                  planning, and investment advisory services.
+                  Over 30 years of combined management experience in investment advisory, strategic planning, 
+                  project management consultancy, and fund management services.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Multi-Sector Expertise</h3>
+                <h3 className="text-2xl font-semibold mb-4">Multi-Sector Consultancy</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Specialized knowledge across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure, 
+                  Specialized advisory knowledge across Finance, Energy, Agriculture, Commercial Infrastructure, 
                   ICT, and Greenfield project sectors.
                 </p>
               </CardContent>
@@ -226,16 +232,23 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">Ready to Fund Your African Project?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">Ready to Transform Your African Business?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 text-pretty leading-relaxed">
-            Partner with Afri-Rise for affordable financing solutions and expert consultancy services for your 
-            Private Sector African Projects with social impact.
+            Partner with Afri-Rise for expert finance advisory, private equity consultancy, and direct investment 
+            solutions for your Private Sector African Projects with social impact.
           </p>
-          <Button size="lg" asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
-            <Link href="/contact">
-              Get Started Today <ArrowRight className="ml-2" size={20} />
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply for Funding <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
+            <Button size="lg" asChild className="btn-hover-lift bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="/contact">
+                Get Started Today <ArrowRight className="ml-2" size={20} />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

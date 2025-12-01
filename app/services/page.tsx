@@ -6,40 +6,25 @@ import { TrendingUp, Globe, Shield, DollarSign, Truck, Briefcase, Zap, Scale, Ar
 export default function ServicesPage() {
   const services = [
     {
-      icon: DollarSign,
-      title: "Fund Management",
+      icon: Globe,
+      title: "Investment Advisory",
       description:
-        "Working with thousands of companies around the world to provide expert fund management solutions for African private sector projects with communal social impact.",
+        "Working with thousands of companies around the world to provide expert finance advisory and investment consultancy services for African business opportunities and sustainable development projects.",
       features: [
-        "Affordable Financing Solutions",
-        "Private Sector Project Funding",
-        "Social Impact Investment",
-        "Fund Structuring & Administration",
-        "Portfolio Management",
-        "Investor Relations",
+        "Investment Opportunity Analysis",
+        "Due Diligence Services",
+        "Financial Modeling & Valuation",
+        "Risk Assessment & Management",
+        "Portfolio Diversification",
+        "Exit Strategy Planning",
       ],
-      href: "/services/fund-management",
-    },
-    {
-      icon: Briefcase,
-      title: "Project Management",
-      description:
-        "Working with thousands of companies around the world to deliver comprehensive project management services for impactful African initiatives across multiple sectors.",
-      features: [
-        "Project Planning & Execution",
-        "Resource Allocation & Optimization",
-        "Timeline & Budget Management",
-        "Stakeholder Coordination",
-        "Risk Mitigation Strategies",
-        "Quality Assurance & Delivery",
-      ],
-      href: "/services/project-management",
+      href: "/services/investment-advisory",
     },
     {
       icon: TrendingUp,
       title: "Strategic Planning",
       description:
-        "Working with thousands of companies around the world to develop strategic plans that drive sustainable growth and create lasting social impact across African markets.",
+        "Working with thousands of companies around the world to develop strategic advisory plans that drive sustainable growth and create lasting social impact across African markets.",
       features: [
         "Business Strategy Development",
         "Market Entry Planning",
@@ -51,19 +36,34 @@ export default function ServicesPage() {
       href: "/services/strategic-planning",
     },
     {
-      icon: Globe,
-      title: "Investment Advisory",
+      icon: Briefcase,
+      title: "Project Management",
       description:
-        "Working with thousands of companies around the world to provide expert investment advisory services for African business opportunities and sustainable development projects.",
+        "Working with thousands of companies around the world to deliver comprehensive project management consultancy services for impactful African initiatives across multiple sectors.",
       features: [
-        "Investment Opportunity Analysis",
-        "Due Diligence Services",
-        "Financial Modeling & Valuation",
-        "Risk Assessment & Management",
-        "Portfolio Diversification",
-        "Exit Strategy Planning",
+        "Project Planning & Execution",
+        "Resource Allocation & Optimization",
+        "Timeline & Budget Management",
+        "Stakeholder Coordination",
+        "Risk Mitigation Strategies",
+        "Quality Assurance & Delivery",
       ],
-      href: "/services/investment-advisory",
+      href: "/services/project-management",
+    },
+    {
+      icon: DollarSign,
+      title: "Fund Management",
+      description:
+        "Working with thousands of companies around the world to provide fund management advisory and support for African private sector projects with communal social impact.",
+      features: [
+        "Affordable Financing Solutions",
+        "Private Sector Project Funding",
+        "Social Impact Investment",
+        "Fund Structuring & Administration",
+        "Portfolio Management",
+        "Investor Relations",
+      ],
+      href: "/services/fund-management",
     },
   ]
 
@@ -98,8 +98,8 @@ export default function ServicesPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">Our Core Services</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Four specialized service lines delivering excellence in fund management, project management, strategic planning, 
-              and investment advisory for African private sector projects with social impact.
+              Expert finance advisory and private equity consultancy services delivering excellence in investment advisory, 
+              strategic planning, project management, and fund management for African private sector projects with social impact.
             </p>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Industry Focus</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Serving African businesses across seven key industry sectors with specialized expertise
+              We focus on these key sectors but are not limited to them. Our expertise extends across various industries where we can create meaningful impact.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -208,7 +208,7 @@ export default function ServicesPage() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Agriculture & Insurance</CardTitle>
+                <CardTitle>Agriculture</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
@@ -222,11 +222,11 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Insurance Services</span>
+                    <span>Farm Development</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <ArrowRight className="text-[#B3892B] flex-shrink-0 mt-1" width={16} height={16} />
-                    <span>Risk Management Solutions</span>
+                    <span>Supply Chain Solutions</span>
                   </li>
                 </ul>
               </CardContent>
@@ -265,10 +265,15 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
-            Discover how Afri-Rise can support your African business with affordable financing solutions and expert 
-            consultancy services for projects with social impact.
+            Discover how Afri-Rise can support your African business with expert finance advisory, private equity 
+            consultancy, and direct investment solutions for projects with social impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
+              <Link href="https://app.afri-rise.com" target="_blank" rel="noopener noreferrer">
+                Apply for Funding <ArrowRight className="ml-2" width={20} height={20} />
+              </Link>
+            </Button>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/contact">
                 Get in Touch <ArrowRight className="ml-2" width={20} height={20} />

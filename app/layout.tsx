@@ -12,9 +12,9 @@ import { Suspense } from "react"
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
+  title: "Afri-Rise Equity Limited | Finance Advisory & Private Equity Consultancy",
   description:
-    "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact. Part of Ronami Group of Companies.",
+    "Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact. Part of Ronami Group of Companies.",
   generator: "v0.app",
   robots: {
     index: true,
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
+    title: "Afri-Rise Equity Limited | Finance Advisory & Private Equity Consultancy",
     description:
-      "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact.",
+      "Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact.",
     url: "https://afri-rise.com",
     siteName: "Afri-Rise",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Afri-Rise - The African Fund, For African Companies",
+        alt: "Afri-Rise - Finance Advisory & Private Equity Consultancy",
       },
     ],
     locale: "en_US",
@@ -46,16 +46,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afri-Rise Equity Limited | The African Fund, For African Companies",
+    title: "Afri-Rise Equity Limited | Finance Advisory & Private Equity Consultancy",
     description:
-      "A Fund Management Consultancy firm formed to assist businesses in getting affordable financing for Private Sector African Projects that have a communal social impact.",
+      "Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact.",
     images: ["/og-image.png"],
   },
   keywords: [
+    "finance advisory",
+    "private equity consultancy",
+    "direct investment consultancy",
+    "investment advisory",
     "fund management",
     "project management",
     "strategic planning",
-    "investment advisory",
     "African fund",
     "African companies",
     "private sector financing",

@@ -13,7 +13,7 @@ export function Footer() {
               The African Fund, For African Companies
             </p>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
-              A Fund Management Consultancy firm assisting businesses in getting affordable financing for Private Sector African Projects with communal social impact.
+              Finance Advisory and Private Equity Consultancy firm specializing in Direct Investment Consultancy for Private Sector African Projects with communal social impact.
             </p>
             {/* Social Media Icons */}
             <div className="flex gap-3">
@@ -123,18 +123,10 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/services/fund-management"
+                  href="/services/investment-advisory"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Fund Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/project-management"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                >
-                  Project Management
+                  Investment Advisory
                 </Link>
               </li>
               <li>
@@ -147,10 +139,18 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/investment-advisory"
+                  href="/services/project-management"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Investment Advisory
+                  Project Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/fund-management"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Fund Management
                 </Link>
               </li>
             </ul>
@@ -215,12 +215,12 @@ export function Footer() {
             <div>
               <h5 className="font-semibold mb-2">About Afri-Rise</h5>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                Afri-Rise Equity Limited is a Fund Management Consultancy firm formed to assist businesses in
-                getting affordable financing for Private Sector African Projects that have a communal social impact.
-                With over three decades of combined management experience, Afri-Rise is part of Ronami Group of Companies
-                (Ronami Holdings Ltd), specializing in Fund Management, Project Management, Strategic Planning, and
-                Investment Advisory Services across Finance, Energy, Insurance, Agriculture, Commercial Infrastructure,
-                ICT, and Greenfield sectors.
+                Afri-Rise Equity Limited is a Finance Advisory and Private Equity Consultancy firm specializing in Direct 
+                Investment Consultancy to assist businesses in getting affordable financing for Private Sector African 
+                Projects that have a communal social impact. With over three decades of combined management experience, 
+                Afri-Rise is part of Ronami Group of Companies (Ronami International Limited), providing expert advisory 
+                services in Investment Advisory, Strategic Planning, Project Management, and Fund Management across Finance, 
+                Energy, Agriculture, Commercial Infrastructure, ICT, and Greenfield sectors.
               </p>
             </div>
           </div>
