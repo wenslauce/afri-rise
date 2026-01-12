@@ -58,7 +58,7 @@ export default function ProjectManagementPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
-                <Link href="https://https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
                   Apply for Funding <ArrowRight className="ml-2" size={20} />
                 </Link>
               </Button>
@@ -205,7 +205,7 @@ export default function ProjectManagementPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-[#B3892B] text-white hover:bg-[#9A7324]">
-              <Link href="https://https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
                 Apply for Funding <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>

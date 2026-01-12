@@ -96,7 +96,7 @@ export function Navigation() {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-2">
             <Button asChild variant="outline" className="border-[#B3892B] text-[#B3892B] hover:bg-[#B3892B] hover:text-white">
-              <Link href="https://https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
                 Apply Now
               </Link>
             </Button>
@@ -118,7 +118,7 @@ export function Navigation() {
           <div className="px-4 py-4 space-y-2">
             <div className="pb-2">
               <Button asChild className="w-full btn-hover-lift border-[#B3892B] text-[#B3892B] hover:bg-[#B3892B] hover:text-white" variant="outline">
-                <Link href="https://https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apply.afri-rise.com/" target="_blank" rel="noopener noreferrer">
                   Apply Now
                 </Link>
               </Button>
